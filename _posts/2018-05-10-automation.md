@@ -3,7 +3,6 @@ title: "Automation and Its Impact on Jobs"
 date: "2018-05-10"
 category: R
 tags: [r, statistics, visualization]
-permalink: /r/automation/
 comments: true
 ---
 
