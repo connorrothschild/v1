@@ -21,7 +21,7 @@ defaults:
       layout: "default"
   - # sets is_post=true for all blog posts
     scope:
-      path: ""
+      path: "_posts"
       type: posts
     values:
       is_post: true
