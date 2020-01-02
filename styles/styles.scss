@@ -100,12 +100,27 @@ img {
 }
 
 // code
-code {
-    padding: 2px 4px;
-    font-size: 90%;
-    color: #c7254e;
-    background-color: #f9f2f4;
-    border-radius: 4px
+pre, code {
+	font: 400 1rem Inconsolata, monospace;
+}
+
+pre {
+	padding: 1rem;
+	white-space: pre-wrap;
+}
+
+code { 
+	padding: 2px 4px; 
+	font-size: 90%; 
+	color: #c7254e; 
+	background-color: #f9f2f4; 
+	border-radius: 4px }
+
+pre code {
+	background: transparent;
+	line-height: 120%;
+	padding: 0;
+	color: #eee;
 }
 
 .highlight pre { background-color: #272822; color: #eee }
