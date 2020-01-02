@@ -2,8 +2,8 @@
 title: "STEMigration: Leaving and Entering STEM Fields During College"
 date: "2019-03-11"
 category: R
-tags: [r, visualization]
-permalink: /r/stem-migration/
+tags: [r, visualization]=
+permalink: r/stem-migration/
 comments: true
 ---
 
