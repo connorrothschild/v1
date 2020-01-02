@@ -3,6 +3,7 @@ title: "Tidy Tuesday: Powerlifting"
 date: "2019-10-08"
 category: R
 tags: [r, visualization, animation]
+permalink: /r/tt-powerlifting/
 comments: true
 ---
 

@@ -3,6 +3,7 @@ title: "The Race for Media Attention"
 date: "2019-05-30"
 category: R
 tags: [r, statistics, visualization]
+permalink: /r/media-mentions/
 comments: true
 ---
 

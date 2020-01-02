@@ -3,6 +3,7 @@ title: "Games and Guns"
 date: "2019-08-12"
 category: R
 tags: [r, visualization]
+permalink: /r/games-and-guns/
 comments: true
 ---
 

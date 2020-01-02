@@ -3,6 +3,7 @@ title: "Building my First Shiny App"
 date: "2019-08-03"
 category: R
 tags: [r, visualization, interactive]
+permalink: /r/building-my-first-shiny-app/
 comments: true
 ---
 

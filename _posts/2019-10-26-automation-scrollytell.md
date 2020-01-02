@@ -3,6 +3,7 @@ title: "How to Scrollytell in R: Automation and Its Impact on Jobs"
 date: "2019-10-26"
 category: R
 tags: [r, statistics, visualization, scrollytelling, interactive, best of]
+permalink: /r/automation-scrollytell/
 comments: true
 ---
 

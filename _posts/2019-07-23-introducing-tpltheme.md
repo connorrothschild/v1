@@ -3,6 +3,7 @@ title: "My First Package! Introducing 'tpltheme'"
 date: "2019-07-23"
 category: R
 tags: [r, visualization, package]
+permalink: /r/introducing-tpltheme/
 comments: true
 ---
 

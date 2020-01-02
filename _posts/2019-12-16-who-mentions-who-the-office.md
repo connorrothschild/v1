@@ -3,6 +3,7 @@ title: "The Office: Who Mentions Who?"
 date: "2019-12-16"
 category: R
 tags: [r, visualization, interactive]
+permalink: /r/who-mentions-who-the-office/
 comments: true
 ---
 

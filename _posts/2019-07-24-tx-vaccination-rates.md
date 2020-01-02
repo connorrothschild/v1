@@ -3,6 +3,7 @@ title: "Texas Vaccination Rates (How to Use Rayshader)"
 date: "2019-07-24"
 category: R
 tags: [r, visualization, animation]
+permalink: /r/tx-vaccination-rates/
 comments: true
 ---
 

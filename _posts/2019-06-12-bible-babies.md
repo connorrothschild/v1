@@ -3,6 +3,7 @@ title: "Bible Babies: Exploring Biblically-Inspired Baby Names over Time"
 date: "2019-06-12"
 category: R
 tags: [r, visualization]
+permalink: /r/bible-babies/
 comments: true
 ---
 

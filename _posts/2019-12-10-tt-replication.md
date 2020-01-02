@@ -3,6 +3,7 @@ title: "Tidy Tuesday: Replication"
 date: "2019-12-10"
 category: R
 tags: [r, visualization, replication]
+permalink: /r/tt-replication/
 comments: true
 ---
 
