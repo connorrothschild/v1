@@ -9,7 +9,7 @@ I'm a junior at [Rice University](https://www.rice.edu) studying Social Policy A
 
 ## ❓What's This Site?
 
-This website serves to host all of my technical writings. I encourage you to check out my [data visualization portfolio](https://connorrothschild.github.io/visualizations/), which includes projects made in [R](https://connorrothschild.github.io/r/) and [D3.js](https://connorrothschild.github.io/d3js/).
+This website serves to host all of my technical writings. I encourage you to check out my [data visualization portfolio](https://connorrothschild.github.io/visualizations), which includes projects made in [R](https://connorrothschild.github.io/r) and [D3.js](https://connorrothschild.github.io/d3js).
 
 If you'd like a more holistic view of my portfolio (not just code stuff!), you can find my other website [here](https://www.connorrothschild.com).
 
