@@ -17,7 +17,7 @@ If you'd like a more holistic view of my portfolio (not just code stuff!), you c
 
 Right now, I'm working as an intern for the [Texas Policy Lab](https://www.texaspolicylab.org/profile/connor-rothschild/), a research fellow for the [Religion and Public Life Program at Rice University](https://rplp.rice.edu/staff-and-fellows), and a data science fellow with [Bluebonnet Data](https://www.bluebonnetdata.com).
 
-I'm currently reading [these books 📚](https://www.goodreads.com/review/list/91140862?shelf=currently-reading), listening to [this music 🎵], and watching [these movies 🍿](https://letterboxd.com/connorroth/).
+I'm currently reading [these books 📚](https://www.goodreads.com/review/list/91140862?shelf=currently-reading), listening to [this music 🎵](https://open.spotify.com/user/12127359561), and watching [these movies 🍿](https://letterboxd.com/connorroth/).
 
 ## 👋🏻 Say hi
 
