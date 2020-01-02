@@ -6,11 +6,11 @@ nav-links:
   - name: Home
     url: /
   - name: Visualizations
-    url: visualizations
+    url: /visualizations
   - name: Blog
-    url: blog
+    url: /blog
   - name: Resume
-    url: resume
+    url: /resume
   
 # things you probably don't want to change
 defaults:
