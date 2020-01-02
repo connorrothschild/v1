@@ -27,7 +27,7 @@ defaults:
       path: "_pages"
       type: pages
     values:
-      layout: "default"
+      layout: "pages"
   - # sets is_post=true for all blog posts
     scope:
       path: ""
