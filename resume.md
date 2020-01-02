@@ -1,7 +1,5 @@
 ---
-permalink: /resume/
 title: "Resume"
-read_time: false
 ---
 
 [![Resume](https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/resume.jpg)](https://docs.google.com/viewer?url=https://github.com/connorrothschild/connorrothschild.github.io/raw/master/figs/ConnorRothschildResume.pdf)
