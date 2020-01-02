@@ -8,8 +8,8 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 $accent-color: #b00; // link color
-$font-stack: system-ui, Inter, sans-serif;
-$heading-font-stack: system-ui, Inter, sans-serif; // use this to set a different font for your headings if you want
+$font-stack: Inter, system-ui, sans-serif;
+$heading-font-stack: Inter, system-ui, sans-serif; // use this to set a different font for your headings if you want
 
 // reset
 * {
