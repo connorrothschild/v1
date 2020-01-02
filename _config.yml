@@ -12,6 +12,9 @@ nav-links:
   - name: Resume
     url: /resume
 
+include:
+  - _pages
+  
 # things you probably don't want to change
 defaults:
   - # applies the default layout to all files in the project
