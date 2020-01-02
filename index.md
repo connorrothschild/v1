@@ -1,7 +1,7 @@
 ---
 ---
 
-<img id="portrait" src="assets/me.jpg" alt="placeholder photo">
+<img id="portrait" src="_assets/me.jpg" alt="placeholder photo">
 
 Hi, I'm Connor!
 
