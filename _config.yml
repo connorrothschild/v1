@@ -1,14 +1,16 @@
 # things you probably want to change
 url: https://connorrothschild.github.io/testing
-title: New Site
-description: description for search engines and social media cards
+title: Connor Rothschild
+description: Connor Rothschild is an undergraduate at Rice University interested in data science, visualization, and public policy.
 nav-links:
   - name: Home
     url: /
-  - name: About
-    url: /about
+  - name: Visualizations
+    url: /visualizations
   - name: Blog
     url: /blog
+  - name: Resume
+    url: /resume
 
 # things you probably don't want to change
 defaults:
