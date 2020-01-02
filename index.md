@@ -1,7 +1,7 @@
 ---
 ---
 
-<img id="portrait" src="_assets/me.jpg" alt="Headshot of Connor Rothschild">
+<img id="portrait" src="me/me.jpg" alt="Headshot of Connor Rothschild">
 
 Hi, I'm Connor!
 
