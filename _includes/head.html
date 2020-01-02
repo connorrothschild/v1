@@ -1,15 +1,17 @@
 <!DOCTYPE html>
     <head>
-        <meta charset="utf-8">
-        <title>{{ site.title }}</title>
-        <meta name="description" content="{{ site.description }}">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-		<link rel="stylesheet" href="{{ '/styles/styles.css' | prepend:site.url }}">
+        <meta charset="utf-8" />
+        <title>{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}</title>
+        <meta name="description" content="{% if post %}{{ post.content | strip_html | truncatewords: 70 }}{% endif %}{% unless page.description %}{{ site.description }}{% endunless %}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <link rel="stylesheet" href="{{ '/css/styles.css' | prepend:site.url }}" />
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet" />
+        <link rel="icon" type="imge/x-icon" href="{{ '/assets/favicon.ico' | prepend:site.url }}" />
     </head>
     
     <body>
         <div id="container">
-            <h1 class="global-title">{{ site.title }}‍</h1>
+            <h1 class="global-title">Connor Rothschild</h1>
             {% if site.nav-links %}
             <nav>
                 <ul>
