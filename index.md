@@ -5,7 +5,9 @@
 
 Hi, I'm Connor!
 
-I'm a junior at [Rice University](https://www.rice.edu) studying Social Policy Analysis and Political Science, and pursuing a minor in data science. I'm interested in data visualization and public policy (and their intersection!), and my go-to tools for exploring those topics are D3.js and R.
+I'm a junior at [Rice University](https://www.rice.edu) studying Social Policy Analysis and Political Science, and pursuing a minor in data science. 
+
+I'm interested in data visualization and public policy (and their intersection!), and my go-to tools for exploring those topics are D3.js and R.
 
 This website serves to host all of my technical writings. I encourage you to check out my [data visualization portfolio](https://connorrothschild.github.io/visualizations), which includes projects made in [R](https://connorrothschild.github.io/r) and [D3.js](https://connorrothschild.github.io/d3js).
 
