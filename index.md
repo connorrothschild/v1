@@ -3,7 +3,7 @@
 
 <img id="portrait" src="me/me.jpg" alt="Headshot of Connor Rothschild">
 
-Hi, I'm Connor!
+Hi, I'm Connor 🤠
 
 I'm a junior at [Rice University](https://www.rice.edu) studying Social Policy Analysis and Political Science, and pursuing a minor in data science. 
 
