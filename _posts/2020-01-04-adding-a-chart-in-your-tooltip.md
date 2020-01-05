@@ -1,9 +1,9 @@
 ---
-title: "How (and Why) to Add a Chart to your D3.js Tooltip"
+title: "How (and Why) to Add a Chart to Your D3.js Tooltip"
 date: "2020-01-04"
 category: D3.js
 tags: [d3js, visualization, interactive]
-permalink: /d3js/adding-a-chart-to-your-d3js-tooltip
+permalink: /d3js/how-to-add-a-chart-d3-tooltip
 comments: true
 ---
 
@@ -33,9 +33,9 @@ For example, hovering on West Virginia, which in 2017 seemed to have the highest
 
 ![West Virginia Image](../data/west-virginia.jpg)
 
-## So, how do I do it?
+## So, how do you do it?
 
-Great question! It's thankfully not that hard, but the payoff is huge. The shift from my old, boring tooltip to my new, sexy one took only a couple of hours, thanks to a few Stack Overflow answers and online resources.
+Great question! It's thankfully not that hard, but the payoff is huge. The shift from my old, boring tooltip to my new, sexy one took only a couple of hours, thanks to a few [Stack Overflow answers](https://stackoverflow.com/questions/43904643/add-chart-to-tooltip-in-d3) and [online examples](https://bl.ocks.org/maelafifi/ee7fecf90bb5060d5f9a7551271f4397).
 
 ### Step 1: Load `d3-tip`
 
