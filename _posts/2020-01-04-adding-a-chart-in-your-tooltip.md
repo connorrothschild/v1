@@ -17,7 +17,7 @@ That's why I recently updated one of my tooltips from a static presentation of t
 
 ![](../data/old-tooltip.gif)
 
-to this (please hover!):
+to this:
 
 ![](../data/new-tooltip.gif)
     
@@ -254,12 +254,10 @@ tipSVG.append("text")
 And finally, we hide the tooltip on mouseout:
 
 ```javascript
-  	  .on('mouseout', tool_tip.hide)
+.on('mouseout', tool_tip.hide)
 ```
 
-<hr>
-
-Thanks for reading! You can play around with the visualization and checkout the tooltip for yourself here (find the fullscreen version [here](https://connorrothschild.github.io/D3.js/map-overdoses/):
+Thanks for reading! You can play around with the visualization and checkout the tooltip for yourself here (find the fullscreen version [here](https://connorrothschild.github.io/D3.js/map-overdoses/)):
 
 <div>    
 <svg width="960" height="600"></svg>
