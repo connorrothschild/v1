@@ -19,14 +19,6 @@ That's why I recently updated one of my tooltips from a static presentation of t
 
 to this (please hover!):
 
-<html lang="en">
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
-
-        <svg width="960" height="600"></svg>
-
 <style>
 
 @import url('https://rsms.me/inter/inter.css');
@@ -559,6 +551,11 @@ function ready(error, us, overdoses) {
     }
 };
     </script> 
+    
+    
+<svg width="960" height="600"></svg>
+
+
     
 ## Why did I make that change?
 
