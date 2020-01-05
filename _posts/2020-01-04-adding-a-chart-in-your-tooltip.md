@@ -19,9 +19,11 @@ That's why I recently updated one of my tooltips from a static presentation of t
 
 to this (please hover!):
 
+<head>
 <div>    
 <svg width="960" height="600"></svg>
 </div>
+</head>
 
 <style>
 
