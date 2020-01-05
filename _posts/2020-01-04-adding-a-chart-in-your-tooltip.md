@@ -15,7 +15,7 @@ Of course, there's nothing *wrong* with these kinds of tooltips. But they are tr
 
 That's why I recently updated one of my tooltips from a static presentation of textual information to a line chart depicting change over time. In other words, I went from this:
 
-![../data/old-tooltip.gif]
+![](../data/old-tooltip.gif)
 
 to this (please hover!):
 
