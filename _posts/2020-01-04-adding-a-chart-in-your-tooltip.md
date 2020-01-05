@@ -564,7 +564,7 @@ function ready(error, us, overdoses) {
 };
     </script> 
 
-<div id="svg"></div>
+<div id="my_chart"></div>
     
 ## Why did I make that change?
 
