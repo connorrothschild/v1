@@ -9,7 +9,6 @@ comments: true
 
 Adding a chart to your tooltip :)
 
-<!DOCTYPE html>
 <html lang="en">
   <head>
   <meta charset="utf-8" />
@@ -25,18 +24,6 @@ Adding a chart to your tooltip :)
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
       <article>
-
-		<!-- sticky top navigation bar -->
-		<div class = "topnav">
-		  <a href = "https://connorrothschild.github.io">
-		    <img src="https://github.com/connorrothschild/connorrothschild.github.io/blob/master/_assets/images/headshotCircle.png?raw=true" width = "40" height = "40">
-		  </a>
-
-		<a href = "https://connorrothschild.github.io">
-		  <span style = "font-weight:normal">Connor Rothschild</span>
-		  <br>
-		  <span style = "font-weight:lighter;color:#343434">Back to home</span>
-		</a></div>
 
         <h1> Opioid-Involved Overdose Deaths in the US, 1999 to 2017</h1>
         <h2>In 2017, the US Department of Health and Human Services declared the overprescription and abuse of opioids a <a href="https://www.hhs.gov/about/news/2017/10/26/hhs-acting-secretary-declares-public-health-emergency-address-national-opioid-crisis.html" target="_blank">public health crisis</a>, following 42,000 deaths the year prior. 
@@ -304,7 +291,7 @@ queue()
   // read in JSON which includes all of the complicated shape data for states/counties/etc.
   .defer(d3.json, "https://d3js.org/us-10m.v1.json")
   // read in opioid data
-  .defer(d3.csv, "overdoses.csv")
+  .defer(d3.csv, "../_R/overdoses.csv")
   /*
   NOTE ON OVERDOSE DATA: 
   
@@ -589,6 +576,4 @@ function ready(error, us, overdoses) {
     }
 };
     </script> 
-  </body>
-</html>
 
