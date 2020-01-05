@@ -291,7 +291,7 @@ queue()
   // read in JSON which includes all of the complicated shape data for states/counties/etc.
   .defer(d3.json, "https://d3js.org/us-10m.v1.json")
   // read in opioid data
-  .defer(d3.csv, "../_R/overdoses.csv")
+  .defer(d3.csv, "../data/overdoses.csv")
   /*
   NOTE ON OVERDOSE DATA: 
   
