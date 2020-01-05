@@ -19,6 +19,10 @@ That's why I recently updated one of my tooltips from a static presentation of t
 
 to this (please hover!):
 
+<div>    
+<svg width="960" height="600"></svg>
+</div>
+
 <style>
 
 @import url('https://rsms.me/inter/inter.css');
@@ -551,9 +555,6 @@ function ready(error, us, overdoses) {
     }
 };
     </script> 
-    
-    
-<svg width="960" height="600"></svg>
 
 
     
