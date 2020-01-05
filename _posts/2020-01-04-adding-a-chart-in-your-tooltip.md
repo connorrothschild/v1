@@ -896,20 +896,20 @@ function ready(error, us, overdoses) {
       return y_tooltip(+d.rate);
     })
 
-%  var tool_tip = d3.tip()
-%  .attr("class", "d3-tip")
-%  // if the mouse position is greater than 650 (~ Kentucky/Missouri), 
-%  // offset tooltip to the left instead of the right
-%  // credit https://stackoverflow.com/questions/28536367/in-d3-js-how-to-adjust-tooltip-up-and-down-based-on-the-screen-position
-%  .offset(function() {if(current_position[0] > 650) {
-%  	return [-20,-120] } 
-%  	else { return [20,120]}
-%  })
-%  .html(
-%  	"<p>Opioid-involved deaths over time in</p><div id='tipDiv'></div>"
-%  );
-%
-%	svg.call(tool_tip);
+  var tool_tip = d3.tip()
+  .attr("class", "d3-tip")
+  // if the mouse position is greater than 650 (~ Kentucky/Missouri), 
+  // offset tooltip to the left instead of the right
+  // credit https://stackoverflow.com/questions/28536367/in-d3-js-how-to-adjust-tooltip-up-and-down-based-on-the-screen-position
+  .offset(function() {if(current_position[0] > 650) {
+  	return [-20,-120] } 
+  	else { return [20,120]}
+  })
+  .html(
+  	"<p>Opioid-involved deaths over time in</p><div id='tipDiv'></div>"
+  );
+
+	svg.call(tool_tip);
 
     // Start a transition that interpolates the data based on year.
     svg.transition()
@@ -927,79 +927,79 @@ function ready(error, us, overdoses) {
       // appending svg inside of tooltip for year by year change.
       // h/t https://bl.ocks.org/maelafifi/ee7fecf90bb5060d5f9a7551271f4397
       // h/t https://stackoverflow.com/questions/43904643/add-chart-to-tooltip-in-d3
-%       .on('mouseover', function(d) {
-%
-%       	// define and store the mouse position. this is used to define
-%       	// tooltip offset, seen above.
-%		current_position = d3.mouse(this); 				
-%       	//console.log(current_position[0])
-%
-%       	current_state = nameById[d.id]
-%
-%	    tool_tip.show();
-%	    var tipSVG = d3.select("#tipDiv")
-%	      .append("svg")
-%	      .attr("width", 220)
-%	      .attr("height", 55);
-%
-%	    tipSVG.append("path")
-%	      .datum(overdoses.filter(function(d) {return nameById[d.id] == current_state}))
-%	      .style("stroke", function() {
-%	      	if (rateById[d.id] < 10) {
-%	      		return "grey"
-%	      	} else {
-%	      	return color(rateById[d.id])
-%	      	}
-%	  	  })
-%	      .style("stroke-width", 1.5)
-%	      .style("fill", "none")
-%	      .attr("d", line)
-%	      
-%	    tipSVG.append("circle")
-%	      .attr("fill", function() {
-%	      	if (rateById[d.id] < 10) {
-%	      		return "grey"
-%	      	} else {
-%	      	return color(rateById[d.id])
-%	      	}
-%	  	  })
-%          .attr("stroke", "black")
-%	      .attr("cx", 130)
-%    	  .attr("cy", y_tooltip(rateById[d.id]))
-%    	  .attr("r", 3)
-%
-%	    tipSVG.append("text")
-%	      .text(rateById[d.id] + " deaths")
-%	      // .transition()
-%	      // .duration(1000)
-%	      .attr("x", 140)
-%	      .attr("y", function() {
-%	      	if (y_tooltip(rateById[d.id]) < 15) { return 10 }
-%	      		else { return y_tooltip(rateById[d.id]) - 7 }
-%	      	})
-%
-%		tipSVG.append("text")
-%	      .text("per 100,000")
-%	      // .transition()
-%	      // .duration(1000)
-%	      .attr("x", 140)
-%	      .attr("y", function() {
-%	      	if (y_tooltip(rateById[d.id]) < 15) { return 24 }
-%	      		else { return y_tooltip(rateById[d.id]) + 7 }
-%	      	})
-%
-%	    tipSVG.append("text")
-%	      .text(current_state)
-%	      // .transition()
-%	      // .duration(1000)
-%	      .attr("x", 0)
-%	      .attr("y", 15)
-%	      .style("font-size", 18)
-%	      .style("font-weight", 400)
-%
-%
-%	  })
-%  	  .on('mouseout', tool_tip.hide)
+       .on('mouseover', function(d) {
+
+       	// define and store the mouse position. this is used to define
+       	// tooltip offset, seen above.
+		current_position = d3.mouse(this); 				
+       	//console.log(current_position[0])
+
+       	current_state = nameById[d.id]
+
+	    tool_tip.show();
+	    var tipSVG = d3.select("#tipDiv")
+	      .append("svg")
+	      .attr("width", 220)
+	      .attr("height", 55);
+
+	    tipSVG.append("path")
+	      .datum(overdoses.filter(function(d) {return nameById[d.id] == current_state}))
+	      .style("stroke", function() {
+	      	if (rateById[d.id] < 10) {
+	      		return "grey"
+	      	} else {
+	      	return color(rateById[d.id])
+	      	}
+	  	  })
+	      .style("stroke-width", 1.5)
+	      .style("fill", "none")
+	      .attr("d", line)
+	      
+	    tipSVG.append("circle")
+	      .attr("fill", function() {
+	      	if (rateById[d.id] < 10) {
+	      		return "grey"
+	      	} else {
+	      	return color(rateById[d.id])
+	      	}
+	  	  })
+          .attr("stroke", "black")
+	      .attr("cx", 130)
+    	  .attr("cy", y_tooltip(rateById[d.id]))
+    	  .attr("r", 3)
+
+	    tipSVG.append("text")
+	      .text(rateById[d.id] + " deaths")
+	      // .transition()
+	      // .duration(1000)
+	      .attr("x", 140)
+	      .attr("y", function() {
+	      	if (y_tooltip(rateById[d.id]) < 15) { return 10 }
+	      		else { return y_tooltip(rateById[d.id]) - 7 }
+	      	})
+
+		tipSVG.append("text")
+	      .text("per 100,000")
+	      // .transition()
+	      // .duration(1000)
+	      .attr("x", 140)
+	      .attr("y", function() {
+	      	if (y_tooltip(rateById[d.id]) < 15) { return 24 }
+	      		else { return y_tooltip(rateById[d.id]) + 7 }
+	      	})
+
+	    tipSVG.append("text")
+	      .text(current_state)
+	      // .transition()
+	      // .duration(1000)
+	      .attr("x", 0)
+	      .attr("y", 15)
+	      .style("font-size", 18)
+	      .style("font-weight", 400)
+
+
+	  })
+  	  .on('mouseout', tool_tip.hide)
       .call(style, currentYear)
 
  // FOR BAR CHART //
@@ -1049,24 +1049,24 @@ function ready(error, us, overdoses) {
     // add fill according to death rates, for each id (state)
     states.style("fill", function(d) { return color(rateById[d.id]); })
     // OLD TOOLTIP // 
-      .on("mouseover", function(d) {      
-          div.transition()        
-            .duration(200)      
-            .style("opacity", .9);  
+      // .on("mouseover", function(d) {      
+      //     div.transition()        
+      //       .duration(200)      
+      //       .style("opacity", .9);  
 
-      // add tooltip here    
-          div.html('<strong> State: </strong>' + nameById[d.id] + 
-            '<br>' + 
-            '<strong> Year: </strong>' + Math.round(currentYear) +
-            '<br>' + 
-            '<strong> Rate: </strong>' + rateById[d.id] + " per 100,000")
-            .style("left", (d3.event.pageX) + "px")     
-            .style("top", (d3.event.pageY - 28) + "px");})   
-       // remove tooltip on mouse out               
-       .on("mouseout", function(d) {       
-          div.transition()        
-           .duration(500)      
-           .style("opacity", 0);});
+      // // add tooltip here    
+      //     div.html('<strong> State: </strong>' + nameById[d.id] + 
+      //       '<br>' + 
+      //       '<strong> Year: </strong>' + Math.round(currentYear) +
+      //       '<br>' + 
+      //       '<strong> Rate: </strong>' + rateById[d.id] + " per 100,000")
+      //       .style("left", (d3.event.pageX) + "px")     
+      //       .style("top", (d3.event.pageY - 28) + "px");})   
+      //  // remove tooltip on mouse out               
+      //  .on("mouseout", function(d) {       
+      //     div.transition()        
+      //      .duration(500)      
+      //      .style("opacity", 0);});
 
   // create the actual state objects
   svg.append("path")
@@ -1120,4 +1120,3 @@ function ready(error, us, overdoses) {
     }
 };
     </script> 
-
