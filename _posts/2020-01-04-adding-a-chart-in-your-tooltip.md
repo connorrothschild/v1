@@ -565,3 +565,19 @@ function ready(error, us, overdoses) {
     }
 };
     </script> 
+    
+## Why did I make that change?
+
+The former tooltip provided information which was rather uninteresting. Although it clarified the exact *rate* of overdose deaths in a given state at a given time, it didn't do much else. It did provide the year currently in view, but this was also visible in the bottom right corner of the visualization! It also provided the state name, but most of my viewers have likely taken US geography in middle school.
+
+Thus, this tooltip was rather redundant. At best, it provided the *exact* rate, so that a viewer could compare two states, or learn more information about a given state without relying on color encoding ([which can be somewhat unreliable when it comes to quantitative encoding, as is the case in a choropleth map](https://courses.cs.washington.edu/courses/cse442/17au/lectures/CSE442-VisualEncoding.pdf). 
+
+The new tooltip shows a trend over time. It also shows the state name (just in case you skipped that day in US geography!), and also the most recent data on overdose deaths. Because this map is meant to show how the opioid crisis **has evolved**, showing a line chart for each state in my tooltip allows the user to explore state-by-state trends on hover! This is much easier than hovering on each state during each year and trying to keep track of the trends.
+
+For example, hovering on West Virginia, which in 2017 seemed to have the highest opioid-involved overdose death rate (as indicated by it having the darkest shade of red), reveals that its also experienced one of the largest over-time increase in this rate since 1999:
+
+![West Virginia Image](../data/west-virginia.jpg)
+
+## So, How Do I Do It???
+
+Great question. The shift from my old, boring tooltip to my new, sexy one took only a couple of hours, thanks to a few Stack Overflow answers and online resources.
