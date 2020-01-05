@@ -25,12 +25,6 @@ to this (please hover!):
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-      <article>
-        
         <svg width="960" height="600"></svg>
 
 <style>
@@ -565,7 +559,6 @@ function ready(error, us, overdoses) {
     }
 };
     </script> 
-</article>
     
 ## Why did I make that change?
 
