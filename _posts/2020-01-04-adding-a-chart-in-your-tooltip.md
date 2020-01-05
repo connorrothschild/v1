@@ -31,15 +31,6 @@ html { font-family: 'Inter', sans-serif; }
   html { font-family: 'Inter var', sans-serif; }
 }
 
-footer {
-  font: 200 .9em "Inter";
-  text-align: left;
-  margin-top: 2em;
-  border-style: solid;
-  border-width: 1px 0px 0px 0px;
-  padding: 8px 0px 0px 6px;
- }
-
 a { color: #0000EE; }
 
 .states :hover {
@@ -67,39 +58,10 @@ a { color: #0000EE; }
   font: 150 1.1em "Inter";
 }
 
-.topnav {
-  background-color: white;
-  border-style: solid;
-  border-width: 0px 0px 1px 0px;
-  padding: 6px 0px 6px 6px;
-  overflow: hidden;
-  font: 200 .9em "Inter";
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: black;
-  text-align: left;
-  padding: 6px 6px 6px 6px;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
 .d3-tip {
   line-height: .8;
   padding-right: 6px;
   padding-left: 6px;
-  padding-bottom: 6px;
   background: #fff;
   border: 1px solid black;
   font-size: 12px;
@@ -551,7 +513,7 @@ function ready(error, us, overdoses) {
 
 
     
-# Why did I make that change?
+## Why did I make that change?
 
 The former tooltip provided information which was rather uninteresting. Although it clarified the exact *rate* of overdose deaths in a given state at a given time, it didn't do much else. It did provide the year currently in view, but this was also visible in the bottom right corner of the visualization! It also provided the state name, but most of my viewers have likely taken US geography in middle school.
 
@@ -563,7 +525,7 @@ For example, hovering on West Virginia, which in 2017 seemed to have the highest
 
 ![West Virginia Image](../data/west-virginia.jpg)
 
-# So, How Do I Do It???
+## So, How Do I Do It???
 
 Great question. The shift from my old, boring tooltip to my new, sexy one took only a couple of hours, thanks to a few Stack Overflow answers and online resources.
 
