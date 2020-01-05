@@ -30,6 +30,8 @@ to this (please hover!):
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
       <article>
+        
+        <svg width="960" height="600"></svg>
 
 <style>
 
@@ -563,8 +565,7 @@ function ready(error, us, overdoses) {
     }
 };
     </script> 
-
-<div id="my_chart"></div>
+</article>
     
 ## Why did I make that change?
 
