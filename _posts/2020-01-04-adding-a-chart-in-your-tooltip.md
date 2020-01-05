@@ -78,7 +78,7 @@ The most important part here is
 
 where we define the html that creates the tooltip itself. In our case, we provide a title, "Opioid-involved deaths over time", and also specify the div that the tooltip should include. 
 
-### Step 3: Create the `tipDiv` object.
+### Step 3: Create the `tipDiv` object
 
 Finally, we can create the `tipDiv` object we referenced in the above code. The object will be created on mouseover of the group of interest (in my case, states). Thus, the code will look something like this:
 
@@ -93,79 +93,73 @@ Finally, we can create the `tipDiv` object we referenced in the above code. The 
       .on('mouseover', function(d) {
 
        	// define and store the mouse position. this is used to define tooltip offset, seen above.
-		current_position = d3.mouse(this); 				
+	current_position = d3.mouse(this); 				
 
+	// define current state
        	current_state = nameById[d.id]
-
-	    tool_tip.show();
+	
+	// show the tooltip
+	tool_tip.show();
 ```
 
 After that initialization and `show` function, we can define the `tipDiv` object:
 
 ```javascript
-	    var tipSVG = d3.select("#tipDiv")
-	      .append("svg")
-	      .attr("width", 220)
-	      .attr("height", 55);
+var tipSVG = d3.select("#tipDiv")
+     .append("svg")
+     .attr("width", 220)
+     .attr("height", 55);
 
-	    tipSVG.append("path")
-	      .datum(overdoses.filter(function(d) {return nameById[d.id] == current_state}))
-	      .style("stroke", function() {
-	      	if (rateById[d.id] < 10) {
-	      		return "grey"
-	      	} else {
-	      	return color(rateById[d.id])
-	      	}
-	  	  })
-	      .style("stroke-width", 1.5)
-	      .style("fill", "none")
-	      .attr("d", line)
-	      
-	    tipSVG.append("circle")
-	      .attr("fill", function() {
-	      	if (rateById[d.id] < 10) {
-	      		return "grey"
-	      	} else {
-	      	return color(rateById[d.id])
-	      	}
-	  	  })
-          .attr("stroke", "black")
-	      .attr("cx", 130)
-    	  .attr("cy", y_tooltip(rateById[d.id]))
-    	  .attr("r", 3)
+tipSVG.append("path")
+     .datum(overdoses.filter(function(d) {return nameById[d.id] == current_state}))
+     .style("stroke", function() {
+     	if (rateById[d.id] < 10) {
+     		return "grey"
+     	} else {
+     	return color(rateById[d.id])
+     	}
+ 	  })
+     .style("stroke-width", 1.5)
+     .style("fill", "none")
+     .attr("d", line)
+     
+ tipSVG.append("circle")
+     .attr("fill", function() {
+     	if (rateById[d.id] < 10) {
+     		return "grey"
+     	} else {
+     	return color(rateById[d.id])
+     	}
+ 	  })
+    .attr("stroke", "black")
+    .attr("cx", 130)
+    .attr("cy", y_tooltip(rateById[d.id]))
+    .attr("r", 3)
 
-	    tipSVG.append("text")
-	      .text(rateById[d.id] + " deaths")
-	      // .transition()
-	      // .duration(1000)
-	      .attr("x", 140)
-	      .attr("y", function() {
-	      	if (y_tooltip(rateById[d.id]) < 15) { return 10 }
-	      		else { return y_tooltip(rateById[d.id]) - 7 }
-	      	})
+tipSVG.append("text")
+     .text(rateById[d.id] + " deaths")
+     .attr("x", 140)
+     .attr("y", function() {
+     	if (y_tooltip(rateById[d.id]) < 15) { return 10 }
+     		else { return y_tooltip(rateById[d.id]) - 7 }
+     	})
 
-		tipSVG.append("text")
-	      .text("per 100,000")
-	      // .transition()
-	      // .duration(1000)
-	      .attr("x", 140)
-	      .attr("y", function() {
-	      	if (y_tooltip(rateById[d.id]) < 15) { return 24 }
-	      		else { return y_tooltip(rateById[d.id]) + 7 }
-	      	})
+tipSVG.append("text")
+     .text("per 100,000")
+     .attr("x", 140)
+     .attr("y", function() {
+     	if (y_tooltip(rateById[d.id]) < 15) { return 24 }
+     		else { return y_tooltip(rateById[d.id]) + 7 }
+     	})
 
-	    tipSVG.append("text")
-	      .text(current_state)
-	      // .transition()
-	      // .duration(1000)
-	      .attr("x", 0)
-	      .attr("y", 15)
-	      .style("font-size", 18)
-	      .style("font-weight", 400)
-
-
-	  })
-  	  .on('mouseout', tool_tip.hide)
+tipSVG.append("text")
+     .text(current_state)
+     .attr("x", 0)
+     .attr("y", 15)
+     .style("font-size", 18)
+     .style("font-weight", 400)
+ })
+.on('mouseout', tool_tip.hide)
 ```
 
 What's happening here? Let's look at one piece at a time.
@@ -182,85 +176,79 @@ var tipSVG = d3.select("#tipDiv")
 **Next**, we append a path to that SVG. This could be a circle, or a rectangle, or any other appendable shape. Because I am drawing a simple line, we use `path`.
 
 ```javascript
-	    tipSVG.append("path")
-	      .datum(overdoses.filter(function(d) {return nameById[d.id] == current_state}))
-	      .style("stroke", function() {
-	      	if (rateById[d.id] < 10) {
-	      		return "grey"
-	      	} else {
-	      	return color(rateById[d.id])
-	      	}
-	  	  })
-	      .style("stroke-width", 1.5)
-	      .style("fill", "none")
-	      .attr("d", line)
+tipSVG.append("path")
+  .datum(overdoses.filter(function(d) {return nameById[d.id] == current_state}))
+  .style("stroke", function() {
+  	if (rateById[d.id] < 10) {
+  		return "grey"
+  	} else {
+  	return color(rateById[d.id])
+  	}
+	  })
+  .style("stroke-width", 1.5)
+  .style("fill", "none")
+  .attr("d", line)
 ```
 
 In defining the `d` attribute, you see I use the phrase `line`. This is defined earlier in my code to return the x and y position of each data point, to create the path itself.
 
 ```javascript
-  var x_tooltip = d3.scaleLinear()
-    .domain(d3.extent(overdoses, function(d) { return d.year; }))
-    .range([ 0, 130 ]);
-  
-  var y_tooltip = d3.scaleLinear()
-    .domain([0, 60])
-    .range([ 50, 0 ]);
+var x_tooltip = d3.scaleLinear()
+  .domain(d3.extent(overdoses, function(d) { return d.year; }))
+  .range([ 0, 130 ]);
 
-  var line = d3.line()
-    .x(function(d) {
-      return x_tooltip(d.year);
-    })
-    .y(function(d) {
-      return y_tooltip(+d.rate);
-    })
+var y_tooltip = d3.scaleLinear()
+  .domain([0, 60])
+  .range([ 50, 0 ]);
+
+var line = d3.line()
+  .x(function(d) {
+    return x_tooltip(d.year);
+  })
+  .y(function(d) {
+    return y_tooltip(+d.rate);
+  })
 ```
 
 **Lastly**, we add a circle at the end of the line to signify the final data point. We also add the text label for the year 2017.
 	      
 ```javascript
-	    tipSVG.append("circle")
-	      .attr("fill", function() {
-	      	if (rateById[d.id] < 10) {
-	      		return "grey"
-	      	} else {
-	      	return color(rateById[d.id])
-	      	}
-	  	  })
-          .attr("stroke", "black")
-	      .attr("cx", 130)
-    	  .attr("cy", y_tooltip(rateById[d.id]))
-    	  .attr("r", 3)
-
-	    tipSVG.append("text")
-	      .text(rateById[d.id] + " deaths")
-	      // .transition()
-	      // .duration(1000)
-	      .attr("x", 140)
-	      .attr("y", function() {
-	      	if (y_tooltip(rateById[d.id]) < 15) { return 10 }
-	      		else { return y_tooltip(rateById[d.id]) - 7 }
-	      	})
-
-		tipSVG.append("text")
-	      .text("per 100,000")
-	      // .transition()
-	      // .duration(1000)
-	      .attr("x", 140)
-	      .attr("y", function() {
-	      	if (y_tooltip(rateById[d.id]) < 15) { return 24 }
-	      		else { return y_tooltip(rateById[d.id]) + 7 }
-	      	})
-
-	    tipSVG.append("text")
-	      .text(current_state)
-	      // .transition()
-	      // .duration(1000)
-	      .attr("x", 0)
-	      .attr("y", 15)
-	      .style("font-size", 18)
-	      .style("font-weight", 400)
+tipSVG.append("circle")
+  .attr("fill", function() {
+  	if (rateById[d.id] < 10) {
+  		return "grey"
+  	} else {
+  	return color(rateById[d.id])
+  	}
 	  })
+   .attr("stroke", "black")
+  .attr("cx", 130)
+  .attr("cy", y_tooltip(rateById[d.id]))
+  .attr("r", 3)
+
+tipSVG.append("text")
+  .text(rateById[d.id] + " deaths")
+  .attr("x", 140)
+  .attr("y", function() {
+  	if (y_tooltip(rateById[d.id]) < 15) { return 10 }
+  		else { return y_tooltip(rateById[d.id]) - 7 }
+  	})
+
+tipSVG.append("text")
+  .text("per 100,000")
+  .attr("x", 140)
+  .attr("y", function() {
+  	if (y_tooltip(rateById[d.id]) < 15) { return 24 }
+  		else { return y_tooltip(rateById[d.id]) + 7 }
+  	})
+
+tipSVG.append("text")
+  .text(current_state)
+  .attr("x", 0)
+  .attr("y", 15)
+  .style("font-size", 18)
+  .style("font-weight", 400)
+ })
 ```
 
 And finally, we hide the tooltip on mouseout:
@@ -271,7 +259,7 @@ And finally, we hide the tooltip on mouseout:
 
 <hr>
 
-Thanks for reading! You can play around with the visualization and checkout the tooltip for yourself here:
+Thanks for reading! You can play around with the visualization and checkout the tooltip for yourself here (find the fullscreen version [here](https://connorrothschild.github.io/D3.js/map-overdoses/):
 
 <div>    
 <svg width="960" height="600"></svg>
