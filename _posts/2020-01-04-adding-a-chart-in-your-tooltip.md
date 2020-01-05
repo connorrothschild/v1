@@ -564,7 +564,7 @@ function ready(error, us, overdoses) {
 };
     </script> 
 
-<svg width="960" height="600"></svg>
+<div id="svg"></div>
     
 ## Why did I make that change?
 
