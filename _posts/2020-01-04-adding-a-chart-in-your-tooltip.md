@@ -59,9 +59,10 @@ a { color: #0000EE; }
 }
 
 .d3-tip {
-  line-height: .8;
   padding-right: 6px;
   padding-left: 6px;
+  padding-bottom: 6px;
+  padding-top: 0;
   background: #fff;
   border: 1px solid black;
   font-size: 12px;
