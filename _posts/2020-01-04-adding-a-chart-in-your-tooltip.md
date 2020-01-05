@@ -30,8 +30,6 @@ to this (please hover!):
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
       <article>
-        
-        <svg width="960" height="600"></svg>
 
 <style>
 
@@ -119,7 +117,7 @@ a { color: #0000EE; }
   padding-bottom: 6px;
   background: #fff;
   border: 1px solid black;
-  font-size: 13px;
+  font-size: 12px;
   pointer-events: none !important;
 }
 
@@ -565,6 +563,8 @@ function ready(error, us, overdoses) {
     }
 };
     </script> 
+
+<svg width="960" height="600"></svg>
     
 ## Why did I make that change?
 
