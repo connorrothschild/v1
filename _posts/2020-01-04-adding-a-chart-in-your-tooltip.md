@@ -1,5 +1,5 @@
 ---
-title: "Adding a Chart to Your D3.js Tooltip"
+title: "Adding a Chart to your D3.js Tooltip (How and Why)"
 date: "2020-01-04"
 category: D3.js
 tags: [d3js, visualization, interactive]
@@ -19,11 +19,9 @@ That's why I recently updated one of my tooltips from a static presentation of t
 
 to this (please hover!):
 
-<head>
 <div>    
 <svg width="960" height="600"></svg>
 </div>
-</head>
 
 <style>
 
@@ -31,13 +29,6 @@ to this (please hover!):
 html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
-}
-
-h2 {
-  font: 200 1em "Inter";
-  text-align: left;
-  margin-right: 5%;
-  margin-left: 5%;
 }
 
 footer {
@@ -560,7 +551,7 @@ function ready(error, us, overdoses) {
 
 
     
-## Why did I make that change?
+# Why did I make that change?
 
 The former tooltip provided information which was rather uninteresting. Although it clarified the exact *rate* of overdose deaths in a given state at a given time, it didn't do much else. It did provide the year currently in view, but this was also visible in the bottom right corner of the visualization! It also provided the state name, but most of my viewers have likely taken US geography in middle school.
 
@@ -572,6 +563,7 @@ For example, hovering on West Virginia, which in 2017 seemed to have the highest
 
 ![West Virginia Image](../data/west-virginia.jpg)
 
-## So, How Do I Do It???
+# So, How Do I Do It???
 
 Great question. The shift from my old, boring tooltip to my new, sexy one took only a couple of hours, thanks to a few Stack Overflow answers and online resources.
+
