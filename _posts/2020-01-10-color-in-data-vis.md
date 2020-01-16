@@ -10,7 +10,7 @@ If our use of color in visualizations follows the [Five Ws (and one H)](https://
 
 For one example, look at this "Color Emotion Guide" from marketing site [TapClicks](https://www.tapclicks.com/resources/blog/the-influence-of-color-in-data-visualization/) (one of the top results when you Google "color in data visualization" 🧐).
 
-<img src="../data/2020-01-10-color-in-data-vis/color-emotion-guide-lol.jpg" alt="color-emotion-guide-lol" style="zoom:60%;" />
+<img src="../data/2020-01-10-color-in-data-vis/color-emotion-guide-lol.jpg" alt="color-emotion-guide-lol"/>
 
 The implicit suggestion here is that we should use color--whenever and however we can--to capture some form of emotion. Not only is this specific categorization rather odd (Monster energy drinks are peaceful, Virgin Mobile embodies "bold excitement", and Harley Davidson motorcycles just scream "cheerful friendliness" 🤩), it leads novice practitioners to believe that color should be used just for the sake of using color.
 
