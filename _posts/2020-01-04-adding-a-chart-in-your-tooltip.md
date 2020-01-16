@@ -15,11 +15,11 @@ Of course, there's nothing *wrong* with these kinds of tooltips. But they are tr
 
 That's why I recently updated one of my tooltips from a static presentation of textual information to a line chart depicting change over time. In other words, I went from this:
 
-![](../data/old-tooltip.gif)
+![](../data/2020-01-04-adding-a-chart-in-your-tooltip/old-tooltip.gif)
 
 to this:
 
-![](../data/new-tooltip.gif)
+![](../data/2020-01-04-adding-a-chart-in-your-tooltip/new-tooltip.gif)
     
 ## Why did I make that change?
 
@@ -31,7 +31,7 @@ The new tooltip shows a trend over time. It also shows the state name (just in c
 
 For example, hovering on West Virginia, which in 2017 seemed to have the highest opioid-involved overdose death rate (as indicated by it having the darkest shade of red), reveals that its also experienced one of the largest over-time increase in this rate since 1999:
 
-![West Virginia Image](../data/west-virginia.jpg)
+![West Virginia Image](../data/2020-01-04-adding-a-chart-in-your-tooltip/west-virginia.jpg)
 
 ## So, how do you do it?
 
@@ -318,15 +318,10 @@ html { font-family: 'Inter', sans-serif; }
 </style>
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
-
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-
 <script src="https://d3js.org/topojson.v1.min.js"></script>
-
 <script src="https://d3js.org/queue.v1.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
-
 <script>
 
 /* This viz was made a lot easier thanks to the following code:
@@ -361,14 +356,14 @@ function responsivefy(svg) {
       width = parseInt(svg.style('width'), 10),
       height = parseInt(svg.style('height'), 10),
       aspect = width / height;
- 
+
   // set viewBox attribute to the initial size
   // control scaling with preserveAspectRatio
   // resize svg on inital page load
   svg.attr('viewBox', `0 0 ${width} ${height}`)
       .attr('preserveAspectRatio', 'xMinYMid')
       .call(resize);
- 
+
   // add a listener so the chart will be resized
   // when the window resizes
   // multiple listeners for the same event type
@@ -378,7 +373,7 @@ function responsivefy(svg) {
       'resize.' + container.attr('id'), 
       resize
   );
- 
+
   // this is the code that resizes the chart
   // it will be called on load
   // and in response to window resizes
@@ -466,12 +461,12 @@ queue()
   // read in JSON which includes all of the complicated shape data for states/counties/etc.
   .defer(d3.json, "https://d3js.org/us-10m.v1.json")
   // read in opioid data
-  .defer(d3.csv, "../data/overdoses.csv")
+  .defer(d3.csv, "../data/2020-01-04-adding-a-chart-in-your-tooltip/overdoses.csv")
   /*
   NOTE ON OVERDOSE DATA: 
-  
+
   This CSV file was created via pulling data from CDC's WONDER database.
-  
+
   I pulled all deaths from the National Vital Statistics System's multiple cause-of-death mortality files which had one of the following causes of death: opioids (T40.0, T40.1, T40.2, T40.3, T40.4, or T40.6)**; natural/semisynthetic opioids (T40.2); methadone (T40.3); heroin (T40.1); synthetic opioids other than methadone (T40.4); cocaine (T40.5). I followed the methodology of this paper: https://www.cdc.gov/mmwr/volumes/67/wr/mm675152e1.htm?s_cid=mm675152e1_w. Deaths may include multiple opioids as a cause and thus are not mutually exclusive.
 
   You can replicate the data pull on CDC WONDER with this link: https://wonder.cdc.gov/mcd-icd10.html
@@ -488,9 +483,9 @@ function ready(error, us, overdoses) {
     var rateById = {};
     var nameById = {};
     // var yearById = {};
-
+    
     //console.table(overdoses)
-
+    
     overdoses.forEach(function(d){
    	  rateById[d.id] = +d.rate;
       nameById[d.id] = d.state;
@@ -501,7 +496,7 @@ function ready(error, us, overdoses) {
 
     // Add an overlay for the year label.
     var box = label.node().getBBox();
-
+    
     var overlay = svg.append("rect")
       .attr("class", "overlay")
       .attr("x", box.x)
@@ -513,11 +508,11 @@ function ready(error, us, overdoses) {
   var x_tooltip = d3.scaleLinear()
     .domain(d3.extent(overdoses, function(d) { return d.year; }))
     .range([ 0, 130 ]);
-  
+
   var y_tooltip = d3.scaleLinear()
     .domain([0, 60])
     .range([ 50, 0 ]);
-  
+
   // define line function
   var line = d3.line()
     .x(function(d) {
@@ -541,38 +536,38 @@ function ready(error, us, overdoses) {
   );
 
 	svg.call(tool_tip);
-
-    // Start a transition that interpolates the data based on year.
-    svg.transition()
-      .duration(10000)
-      .ease(d3.easeLinear)
-      .tween("year", tweenYear);
-
-    states = svg.append("g")
-      .attr("class", "states")
-      .selectAll("path")
-      .data(topojson.feature(us, us.objects.states).features)
-      .enter()
-      .append("path")
-      .attr("d", path)
-      // appending svg inside of tooltip for year by year change.
-      // h/t https://bl.ocks.org/maelafifi/ee7fecf90bb5060d5f9a7551271f4397
-      // h/t https://stackoverflow.com/questions/43904643/add-chart-to-tooltip-in-d3
-       .on('mouseover', function(d) {
-
-       	// define and store the mouse position. this is used to define
-       	// tooltip offset, seen above.
+	
+	// Start a transition that interpolates the data based on year.
+	svg.transition()
+	  .duration(10000)
+	  .ease(d3.easeLinear)
+	  .tween("year", tweenYear);
+	
+	states = svg.append("g")
+	  .attr("class", "states")
+	  .selectAll("path")
+	  .data(topojson.feature(us, us.objects.states).features)
+	  .enter()
+	  .append("path")
+	  .attr("d", path)
+	  // appending svg inside of tooltip for year by year change.
+	  // h/t https://bl.ocks.org/maelafifi/ee7fecf90bb5060d5f9a7551271f4397
+	  // h/t https://stackoverflow.com/questions/43904643/add-chart-to-tooltip-in-d3
+	   .on('mouseover', function(d) {
+	
+	   	// define and store the mouse position. this is used to define
+	   	// tooltip offset, seen above.
 		current_position = d3.mouse(this); 				
-       	//console.log(current_position[0])
-
-       	current_state = nameById[d.id]
-
+	   	//console.log(current_position[0])
+	
+	   	current_state = nameById[d.id]
+	
 	    tool_tip.show();
 	    var tipSVG = d3.select("#tipDiv")
 	      .append("svg")
 	      .attr("width", 220)
 	      .attr("height", 55);
-
+	
 	    tipSVG.append("path")
 	      .datum(overdoses.filter(function(d) {return nameById[d.id] == current_state}))
 	      .style("stroke", function() {
@@ -594,11 +589,11 @@ function ready(error, us, overdoses) {
 	      	return color(rateById[d.id])
 	      	}
 	  	  })
-          .attr("stroke", "black")
+	      .attr("stroke", "black")
 	      .attr("cx", 130)
-    	  .attr("cy", y_tooltip(rateById[d.id]))
-    	  .attr("r", 3)
-
+		  .attr("cy", y_tooltip(rateById[d.id]))
+		  .attr("r", 3)
+	
 	    tipSVG.append("text")
 	      .text(rateById[d.id] + " deaths")
 	      // .transition()
@@ -608,7 +603,7 @@ function ready(error, us, overdoses) {
 	      	if (y_tooltip(rateById[d.id]) < 15) { return 10 }
 	      		else { return y_tooltip(rateById[d.id]) - 7 }
 	      	})
-
+	
 		tipSVG.append("text")
 	      .text("per 100,000")
 	      // .transition()
@@ -618,7 +613,7 @@ function ready(error, us, overdoses) {
 	      	if (y_tooltip(rateById[d.id]) < 15) { return 24 }
 	      		else { return y_tooltip(rateById[d.id]) + 7 }
 	      	})
-
+	
 	    tipSVG.append("text")
 	      .text(current_state)
 	      // .transition()
@@ -649,7 +644,7 @@ function ready(error, us, overdoses) {
 	  //     .transition()
 	  //     .duration(1000)
 	  //     .attr("width", rateById[d.id] * 6);
-
+	
 	  //   tipSVG.append("text")
 	  //     .text(rateById[d.id] + " per 100,000")
 	  //     .attr("x", 10)
@@ -663,12 +658,12 @@ function ready(error, us, overdoses) {
 
     function style(states, year){
       newoverdoses = interpolateData(year);
-
+    
     var rateById = {};
     var nameById = {};
-
+    
     newoverdoses.forEach(function(d) {
-
+    
       // each state is encoded according to its ANSI/FIPS state code
       // you can find states and their codes here https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations#ANSI_standard_INCITS_38:2009
       rateById[d.id] = +d.rate;
@@ -684,7 +679,7 @@ function ready(error, us, overdoses) {
       //     div.transition()        
       //       .duration(200)      
       //       .style("opacity", .9);  
-
+    
       // // add tooltip here    
       //     div.html('<strong> State: </strong>' + nameById[d.id] + 
       //       '<br>' + 
@@ -717,13 +712,13 @@ function ready(error, us, overdoses) {
 
     // Cancel the current transition, if any.
     svg.transition().duration(0);
-
+    
     overlay
       .on("mouseover", mouseover)
       .on("mouseout", mouseout)
       .on("mousemove", mousemove)
       .on("touchmove", mousemove);
-
+    
     function mouseover() { label.classed("active", true); }
     function mouseout() { label.classed("active", false); }
     function mousemove() { displayYear(yearScale.invert(d3.mouse(this)[0])); }
