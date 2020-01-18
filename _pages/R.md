@@ -1,29 +1,8 @@
 ---
-permalink: /r/
+permalink: /r-portfolio/
 title: "R Visualization Portfolio"
 read_time: false
 ---
-
-<head>
-    
-    <style>
-            .project-list-item{display:flex;padding-top:2rem;padding-bottom:2rem; ;border-bottom:1px solid #c4c4c4}
-
-            .project-list-item-thumbnail{width:33%;height:auto;align-self:center;min-width:150px;flex-basis:33%;display:block}
-            
-            .project-list-item-text-wrap{padding-left:1rem;flex-basis:67%}
-
-            .project-list-item-date{font-weight:700;font-size:.75rem}
-
-            .project-list-item-title{margin-top:1rem;font-size:1.25rem;max-width:30em}
-
-            li {
-                margin: .5rem 0 0 0;
-            }
-
-    </style>
-        
-</head>
 
 <li class="project-list-item"> 
     <img 
