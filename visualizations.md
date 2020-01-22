@@ -13,7 +13,7 @@ I've split my portfolio into two sections:
     class="project-list-item-thumbnail"> 
     <div class="project-list-item-text-wrap"> 
         <a href="https://connorrothschild.github.io/d3js/" class="project-list-item-link" target="_blank"> 
-        <h3 class="project-list-item-title">D3.js</h3>
+        <h1 class="project-list-item-title">D3.js</h1>
         </a> 
     </div> 
 </li>
@@ -25,7 +25,7 @@ I've split my portfolio into two sections:
     class="project-list-item-thumbnail"> 
     <div class="project-list-item-text-wrap"> 
         <a href="https://connorrothschild.github.io/r/" class="project-list-item-link" target="_blank"> 
-        <h3 class="project-list-item-title">R</h3>
+        <h1 class="project-list-item-title">R</h1>
         </a> 
     </div> 
 </li>
