@@ -6,19 +6,26 @@ Here you can find a collection of my data visualizations.
 
 I've split my portfolio into two sections: 
 
-<div class="row">
-  <div class="col-md-6" markdown="1">
+<li class="project-list-item"> 
+    <img 
+    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/opioids.gif" 
+    alt="D3.js Portfolio"
+    class="project-list-item-thumbnail"> 
+    <div class="project-list-item-text-wrap"> 
+        <a href="https://connorrothschild.github.io/d3js/" class="project-list-item-link" target="_blank"> 
+        <h3 class="project-list-item-title">D3.js</h3>
+        </a> 
+    </div> 
+</li>
 
-# [D3.js](https://connorrothschild.github.io/d3js/) 
-
-[![D3.js](https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/opioids.gif)](https://connorrothschild.github.io/d3js/)
-
-  </div>
-  <div class="col-md-6" markdown="1">
-  
-# [R](https://connorrothschild.github.io/r/) 
-
-[![R](https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/scrollytelling.gif)](https://connorrothschild.github.io/r/)
-
-  </div>
-</div>
+<li class="project-list-item"> 
+    <img 
+    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/scrollytelling.gif" 
+    alt="R Portfolio"
+    class="project-list-item-thumbnail"> 
+    <div class="project-list-item-text-wrap"> 
+        <a href="https://connorrothschild.github.io/r/" class="project-list-item-link" target="_blank"> 
+        <h3 class="project-list-item-title">R</h3>
+        </a> 
+    </div> 
+</li>

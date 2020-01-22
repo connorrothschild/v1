@@ -121,7 +121,3 @@ read_time: false
         </a> 
     </div> 
 </li>
-
-        </div>
-    </body>
-</html>
