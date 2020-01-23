@@ -159,4 +159,6 @@ render_movie(filename = "./Outputs/tx_vac_vid", type = "custom",
              frames = 360,  phi = phivecfull, zoom = zoomvecfull, theta = thetavec)
 {% endhighlight %}
 
-You can see the output [here](https://imgur.com/a/zFWGh1R).
+You can see the output here:
+
+![rayshader](https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/rayshader.gif)
