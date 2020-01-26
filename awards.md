@@ -1,10 +1,12 @@
-# Awards
-
 ## 2020
 
 #### First Place (Houston track), Rice Datathon
 
 * Awarded first place in our submission track for my team's project "[Mapping Houston Homicides.](https://connorrothschild.github.io/datathon-2020/source/)"
+
+------
+
+
 
 #### Student Winner, Computation and Journalism Conference at Northeastern University
 
@@ -17,6 +19,10 @@
 #### Winner, Hudspeth Award for the Best Undergraduate Seminar Paper in Political Science
 
 - In recognition of “[¡Vota! Testing the Impact of Spanish-Language Ballots on Election Results and Preferences.](https://scholarship.rice.edu/bitstream/handle/1911/106103/Vota-RDSA-Submission.pdf?sequence=2&isAllowed=y)”
+
+------
+
+
 
 #### Second Place, Houston Centered Policy Challenge | [Media](https://kinder.rice.edu/urbanedge/2019/02/26/affordable-housing-houston-rice-university)
 
@@ -32,6 +38,10 @@
 - Award given in recognition of a 6000-word research paper and 20-minute presentation
 - Proposed a new approach to Haitian food assistance, recommending unconditional cash transfers
 - Awarded prize money and publication in the Rice Journal of Public Policy
+
+------
+
+
 
 #### First Place, Houston-Centered Policy Design Competition | [Media](https://www.houstonpublicmedia.org/articles/news/2018/02/27/270232/rice-students-win-flood-policy-contest-for-multi-home-buyout-idea/)
 
