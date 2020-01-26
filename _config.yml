@@ -1,4 +1,3 @@
-# things you probably want to change
 url: https://connorrothschild.github.io
 title: Connor Rothschild
 description: Connor Rothschild is an undergraduate at Rice University interested in data science, visualization, and public policy.
@@ -7,6 +6,8 @@ nav-links:
     url: /
   - name: Visualizations
     url: /visualizations
+  - name: Awards
+    url: /awards
   - name: Blog
     url: /blog
   - name: Resume
