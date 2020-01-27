@@ -12,7 +12,7 @@ read_time: false
     <div class="project-list-item-text-wrap"> 
         <h4 class="project-list-item-date">January 26, 2020</h4> 
         <a href="https://connorrothschild.github.io/datathon-2020/source/" class="project-list-item-link" target="_blank"> 
-        <h3 class="project-list-item-title">Mapping Houston Homicides (Rice Datathon 2020 Winner)</h3>
+        <h3 class="project-list-item-title">Mapping Houston Homicides<br>(Rice Datathon 2020 Winner)</h3>
         </a> 
     </div> 
 </li>
