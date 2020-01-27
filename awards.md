@@ -12,7 +12,7 @@ Awarded first place in our submission track for my team's project "[Mapping Hous
 
 
 
-#### Student Winner, Computation and Journalism Conference at Northeastern University
+#### Student Winner, [Computation and Journalism Conference at Northeastern University](https://cj2020.northeastern.edu/student-contest/)
 
 Recognized as a winner for my submission to Northeastern's annual 'C+J' conference. The winning visualization was "[Automation and Its Impact on Jobs.](https://connorrothschild.shinyapps.io/automation/)"
 
