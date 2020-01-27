@@ -1,4 +1,5 @@
 ---
+permalink: /resume/
 title: "Resume"
 ---
 
