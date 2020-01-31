@@ -8,7 +8,7 @@ read_time: false
 
 #### First Place (Houston Track), [Rice Datathon](https://datathon.rice.edu/)
 
-Awarded first place in our submission track for my team's project "[Mapping Houston Homicides.](https://connorrothschild.github.io/datathon-2020/source/)" The project, which is an interactive "scrollytelling" presentation, was completed in 16 hou
+Awarded first place in our submission track for my team's project "[Mapping Houston Homicides.](https://connorrothschild.github.io/datathon-2020/source/)" The project, which is an interactive "scrollytelling" presentation, was completed in 16 hours.
 
 
 
