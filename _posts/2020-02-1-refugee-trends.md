@@ -7,7 +7,7 @@ permalink: /r/refugee-trends/
 comments: true
 ---
 
-![final](../data/2020-02-1-refugee-trends/final.svg)
+![final](connorrothschild.github.io/data/2020-02-1-refugee-trends/final.svg)
 
 In [previous projects](https://connorrothschild.github.io/map-missing-migrants/), I've explored how migration has unfolded across *places*: where migrants travel, where they go missing, and where their journeys come to a fatal end.
 
@@ -17,11 +17,11 @@ An effective way to present both of these trends is with a map of [small multipl
 
 There are examples of these types of small multiple maps across the internet. The Washington Post's [overview of the electoral college](https://www.washingtonpost.com/graphics/politics/how-fair-is-the-electoral-college/) was visualized in the following way: 
 
-![Washington Post small multiples map of electoral college data](../data/2020-02-1-refugee-trends/wapo.png)
+![Washington Post small multiples map of electoral college data](connorrothschild.github.io/data/2020-02-1-refugee-trends/wapo.png)
 
 You can also find an overview of *why* they work, and some additional examples, on the [PolicyViz](https://policyviz.com/2016/05/19/small-multiple-tile-grid-map/) blog:
 
-![Policy Viz's small multiples of overall voting results over time](../data/2020-02-1-refugee-trends/policyviz.jpg)
+![Policy Viz's small multiples of overall voting results over time](connorrothschild.github.io/data/2020-02-1-refugee-trends/policyviz.jpg)
 
 
 
@@ -47,7 +47,7 @@ data %>%
   scale_x_continuous(breaks = c(2002, 2019))
 ```
 
-<img src="../data/2020-02-1-refugee-trends/macro.jpg" alt="Line chart of refugee acceptance per year; the line is gradually sloping downward" style="zoom:50%;" />
+<img src="connorrothschild.github.io/data/2020-02-1-refugee-trends/macro.jpg" alt="Line chart of refugee acceptance per year; the line is gradually sloping downward" style="zoom:50%;" />
 
 Now we have the answer to our first question: **how has refugee acceptance changed over time?** The answer: pretty drastically. The US accepted nearly 100,000 refugees in 2016; 2 years later, that number was barely over 20,000. 
 
@@ -65,7 +65,7 @@ facet_geo(~ state)
 
 This makes a plot that looks like this:
 
-![first try](../data/2020-02-1-refugee-trends/firsttry.jpg)
+![first try](connorrothschild.github.io/data/2020-02-1-refugee-trends/firsttry.jpg)
 
 It's alright, but not perfect! There are a few improvements we can definitely make.
 
@@ -121,7 +121,7 @@ data %>%
   )
 ```
 
-![secondtry](../data/2020-02-1-refugee-trends/secondtry.jpg)
+![secondtry](connorrothschild.github.io/data/2020-02-1-refugee-trends/secondtry.jpg)
 
 Pretty good! Much better. But we can add some elements to take our visualization to the next level. 
 
@@ -164,7 +164,7 @@ data %>%
   )
 ```
 
-![r version](../data/2020-02-1-refugee-trends/ref.png)
+![r version](connorrothschild.github.io/data/2020-02-1-refugee-trends/ref.png)
 
 
 
@@ -172,7 +172,7 @@ I brought that plot to Illustrator and made it a lot prettier. Here's the final 
 
 
 
-![final version](../data/2020-02-1-refugee-trends/final.svg)
+![final version](connorrothschild.github.io/data/2020-02-1-refugee-trends/final.svg)
 
 
 
