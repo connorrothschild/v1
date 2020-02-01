@@ -9,9 +9,10 @@ read_time: false
     src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/final.svg" 
     alt="Trends in Refugee Acceptance, 2002 to 2019" 
     class="project-list-item-thumbnail"> 
+
     <div class="project-list-item-text-wrap"> 
         <h4 class="project-list-item-date">February 1, 2020</h4> 
-        <a href="https://connorrothschild.github.io/r/refugee-trends/" class="project-list-item-link" target="_blank"> 
+        <a href="https://connorrothschild.github.io/refugee-trends/" class="project-list-item-link" target="_blank"> 
         <h3 class="project-list-item-title">Trends in Refugee Acceptance, 2002 to 2019</h3>
         </a> 
     </div> 
