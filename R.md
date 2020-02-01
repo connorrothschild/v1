@@ -3,13 +3,26 @@ permalink: /r/
 title: "R Visualization Portfolio"
 read_time: false
 ---
-         
+
+<li class="project-list-item"> 
+    <img 
+    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/final.svg" 
+    alt="Trends in Refugee Acceptance, 2002 to 2019" 
+    class="project-list-item-thumbnail"> 
+    <div class="project-list-item-text-wrap"> 
+        <h4 class="project-list-item-date">February 1, 2020</h4> 
+        <a href="https://connorrothschild.github.io/r/refugee-trends/" class="project-list-item-link" target="_blank"> 
+        <h3 class="project-list-item-title">Trends in Refugee Acceptance, 2002 to 2019</h3>
+        </a> 
+    </div> 
+</li>
 
 <li class="project-list-item"> 
     <img 
     src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/replication.jpg" 
     alt="Tidy Tuesday: Replication" 
     class="project-list-item-thumbnail"> 
+
     <div class="project-list-item-text-wrap"> 
         <h4 class="project-list-item-date">December 10, 2019</h4> 
         <a href="https://connorrothschild.github.io/r/tt-replication/" class="project-list-item-link" target="_blank"> 
