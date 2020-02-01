@@ -6,7 +6,7 @@ read_time: false
 
 <li class="project-list-item"> 
     <img 
-    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/final.svg" 
+    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/final.jpg" 
     alt="Trends in Refugee Acceptance, 2002 to 2019" 
     class="project-list-item-thumbnail"> 
 
