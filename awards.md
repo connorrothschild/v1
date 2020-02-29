@@ -6,6 +6,14 @@ read_time: false
 
 ## 2020
 
+#### First Place, [2020 Houston Policy Challenge](https://ccl.rice.edu/houston-policy-challenge)
+
+Awarded first place (out of 13 teams) at Rice University's 2020 Houston Policy Challenge. Judged by Harris County Sheriff Ed Gonzalez, Harris County District Attorney Kim Ogg, U.S. Magistrate Judge Andrew Edison, Southern District of Texas, and Judge Franklin Bynum, Harris County Criminal Court at Law No. 8
+
+Proposed a pre-trial diversion program for pregnant women and mothers of young children. Awarded prize money and seed money for implementation.
+
+
+
 #### First Place (Houston Track), [Rice Datathon](https://datathon.rice.edu/)
 
 Awarded first place in our submission track for my team's project "[Mapping Houston Homicides.](https://connorrothschild.github.io/datathon-2020/source/)" The project, which is an interactive "scrollytelling" presentation, was completed in 16 hours.
