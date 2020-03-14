@@ -6,6 +6,21 @@ read_time: false
 
 <li class="project-list-item"> 
     <img 
+    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/covid.jpg" 
+    alt="COVID-19 Has Become a Partisan Issue" 
+    class="project-list-item-thumbnail"> 
+
+    <div class="project-list-item-text-wrap"> 
+        <h4 class="project-list-item-date">March 15, 2020</h4> 
+        <a href="https://connorrothschild.github.io/covid/" class="project-list-item-link" > 
+        <h3 class="project-list-item-title">COVID-19 Has Become a Partisan Issue</h3>
+        </a> 
+    </div> 
+</li>
+
+
+<li class="project-list-item"> 
+    <img 
     src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/refugee-trends.jpg" 
     alt="Trends in Refugee Acceptance, 2002 to 2019" 
     class="project-list-item-thumbnail"> 
