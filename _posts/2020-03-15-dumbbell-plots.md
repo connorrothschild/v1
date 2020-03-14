@@ -1,6 +1,6 @@
 ---
 title: “COVID-19 Has Become a Partisan Issue (How to Make Dumbbell Plots in R)"
-date: "2020-02-01"
+date: "2020-03-15"
 category: R
 tags: [r, visualization]
 permalink: /covid/
@@ -34,7 +34,7 @@ There is also a relationship between age and fears related to the coronavirus.
 
 ![age-worry](../data/2020-03-15-dumbbell-plots/age-worry.jpg)
 
-These plots show that there are significant differences in worry by age, but that fears of disruption are felt more universally than fears of infection. The first plot shows that *every age group* fears that COVID-19 will disrupt their daily lives; although younger people express this sentiment less frequently. The second plot **the majority of people under age 50 are unconcerned by the prospect of COVID-19 infection**. The opposite is true for older respondents; those aged 65 years and old are **signficantly** more likely to be concerned by the risk of infection (62% vs 37%).
+These plots show that there are significant differences in worry by age, but that fears of disruption are felt more universally than fears of infection. The first plot shows that *every age group* fears that COVID-19 will disrupt their daily lives; although younger people express this sentiment less frequently. The second plot **the majority of people under age 50 are unconcerned by the prospect of COVID-19 infection**. The opposite is true for older respondents; those aged 65 years and old are **significantly** more likely to be concerned by the risk of infection (62% vs 37%).
 
 
 
@@ -50,13 +50,13 @@ Here’s another example, this time from [Axios](https://www.axios.com/trumps-di
 
 ![axios](../data/2020-03-15-dumbbell-plots/axios.jpg)
 
-This psuedo-dumbbell plot (dumbbells with weird endpoints; don’t pick up that side!) has 50 ‘groups’ (US states), but only two *outcomes* (January and October). A dumbbell plot is *far* superior to a grouped bar chart in this case because it emphasizes the difference is between two periods of time, and it does so with fewer objects (50 lines rather than 100 bars) than a barchart would use. 
+This pseudo-dumbbell plot (dumbbells with weird endpoints; don’t pick up that side!) has 50 ‘groups’ (US states), but only two *outcomes* (January and October). A dumbbell plot is *far* superior to a grouped bar chart in this case because it emphasizes the difference is between two periods of time, and it does so with fewer objects (50 lines rather than 100 bars) than a barchart would use. 
 
 One key lesson from the examples above: If the *comparison* of interest is between two groups (e.g. Republicans and Democrats), or if the *outcome* of interest is two-fold (e.g. ‘concerned’ and ‘not concerned’), dot plots are a superior way to visualize your data.
 
 ## Let’s Make It In R!
 
-Now its time to make your own dumbbell dot plot. We’ll be creating this viz:
+Now it's time to make your own dumbbell dot plot. We’ll be creating this viz:
 
 ![partisan-worry](../data/2020-03-15-dumbbell-plots/partisan-worry.jpg)
 
@@ -101,7 +101,7 @@ ggplot() +
 
 Here, `geom_segment` creates grey lines with a size of 0.15. The lines span from 0 to 0.5. This changes according to your data; because the largest number we are dealing with is .43 (representing 43% of Democrats), our bound on the right side can be 0.5; this also leaves room for the difference column which we create later.
 
-![process-0](/Users/connorrothschild/Desktop/connorrothschild.github.io/data/2020-03-15-dumbbell-plots/process-0.jpg)
+![process-0](../data/2020-03-15-dumbbell-plots/process-0.jpg)
 
 Then, `geom_dumbbell` reads in our data and creates the dumbbells: we specify the *beginning* (`x`) of each dumbbell to represent Republicans and the *end* (`xend`) to correspond to Democrats. Other specifications affect the accompanying line and points.
 
@@ -113,7 +113,7 @@ geom_dumbbell(data=infected, aes(y=concerned, x=rep, xend=dem),
 
 That code creates the following plot:
 
-![process-1](/Users/connorrothschild/Desktop/connorrothschild.github.io/data/2020-03-15-dumbbell-plots/process-1.jpg)Already, we can begin to see the barebones for the finished version: each dumbbell represents a level of concern, and visualizes Republicans and Democrats’ proportions for that level.
+![process-1](../data/2020-03-15-dumbbell-plots/process-1.jpg)Already, we can begin to see the barebones for the finished version: each dumbbell represents a level of concern, and visualizes Republicans and Democrats’ proportions for that level.
 
 ### Step 2: Labels
 
@@ -134,7 +134,7 @@ This code is hopefully quite intuitive. Since we are only showing the labels onc
 
 We label each point at its respective political affiliation, and we specify color according to the point color. The rest is just minor beautification for the text.
 
-![process-2](/Users/connorrothschild/Desktop/connorrothschild.github.io/data/2020-03-15-dumbbell-plots/process-2.jpg)
+![process-2](../data/2020-03-15-dumbbell-plots/process-2.jpg)
 
 We also have to add direct labels for values, so that the exact percentages for each group are clear:
 
@@ -147,7 +147,7 @@ geom_text(data=infected, color=blue, size=2.75, vjust=2.5, family="Lato",
 
 Here, we utilize the function `percent_first` we defined earlier, because we only want percentages to appear on the first numbers (to reduce clutter). The rest of the labels are just numbers which represent percentages. The syntax here is simple syntax that should be familiar to  `ggplot` users. It creates this output:
 
-![process-3](/Users/connorrothschild/Desktop/connorrothschild.github.io/data/2020-03-15-dumbbell-plots/process-3.jpg)
+![process-3](../data/2020-03-15-dumbbell-plots/process-3.jpg)
 
 ### Step 3: A Differences Column
 
@@ -166,7 +166,7 @@ scale_y_discrete(expand=c(0.2,0))
 
 Here, we first create a grey rectangle with `geom_rect`. It spans the entire chart vertically, hence why `ymin` and `ymax` range from negative to positive infinity. Next, we create labels according to the differences column. We position each of them according to the degree of concern (our y-axis). Finally, we expand the bounds of the chart so its a bit prettier:
 
-![process-4](/Users/connorrothschild/Desktop/connorrothschild.github.io/data/2020-03-15-dumbbell-plots/process-4.jpg)
+![process-4](../data/2020-03-15-dumbbell-plots/process-4.jpg)
 
 ### Step 4: Titles, Labels & Captions
 
@@ -180,7 +180,7 @@ labs(x=NULL, y=NULL, title="Republicans are less worried about COVID-19",
 								\n\nDesign: Connor Rothschild")
 ```
 
-![process-5](/Users/connorrothschild/Desktop/connorrothschild.github.io/data/2020-03-15-dumbbell-plots/process-5.jpg)
+![process-5](../data/2020-03-15-dumbbell-plots/process-5.jpg)
 
 That’s our plot! Too bad its kinda ugly. Let’s fix that in our final step.
 
@@ -214,13 +214,13 @@ To simplify, the above code:
 
 Our final output:
 
-![process-6](/Users/connorrothschild/Desktop/connorrothschild.github.io/data/2020-03-15-dumbbell-plots/process-6.jpg)
+![process-6](../data/2020-03-15-dumbbell-plots/process-6.jpg)
 
 ## To Summarize
 
 Our process looked like this:
 
-![process-gif](/Users/connorrothschild/Desktop/connorrothschild.github.io/data/2020-03-15-dumbbell-plots/process-gif.gif)
+![process-gif](../data/2020-03-15-dumbbell-plots/process-gif.gif)
 
 The code for the above visualizations, as well as the underlying datasets and outputs, can be found [here](https://github.com/connorrothschild/R/tree/master/covid).
 
