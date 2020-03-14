@@ -155,8 +155,7 @@ Finally, we want to help our viewers see *how stark* the differences between Dem
 
 ```R
 geom_rect(data=infected, aes(xmin=.5, xmax=.6, ymin=-Inf, ymax=Inf), fill="grey") +
-geom_text(data=infected, aes(label=paste0(diff*100, "%"), y=concerned, x=.55),
-												fontface="bold", size=3, family="Lato") +
+geom_text(data=infected, aes(label=paste0(diff*100, "%"), y=concerned, x=.55), fontface="bold", size=3, family="Lato") +
 geom_text(data=filter(infected, concerned=="Very concerned"), 
             aes(x=.55, y=concerned, label="Difference"),
             color="black", size=3.1, vjust=-2, fontface="bold", family="Lato") +
