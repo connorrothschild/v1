@@ -66,7 +66,7 @@ For reference, the data I’m using looks like this:
 
 Pretty simple, right? [It comes from here, by the way.](https://poll.qu.edu/national/release-detail?ReleaseID=3657#.XmaSrM7okEs.twitter)
 
-The process relies on Bob Rudis’s `ggalt` package and the `geom_dumbbell` function, which does most of the heavy lifting.
+The process relies on Bob Rudis’s `ggalt` package and the `geom_dumbbell` function, which does most of the heavy lifting. This tutorial is mostly a step-by-step recreation of Rudis’s code [found here](https://rud.is/b/2016/04/17/ggplot2-exercising-with-ggalt-dumbbells/).
 
 For convenience, let's define a few things before we get started:
 
