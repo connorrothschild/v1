@@ -1,5 +1,5 @@
 ---
-title: “COVID-19 Has Become a Partisan Issue (How to Make Dumbbell Plots in R)"
+title: COVID-19 Has Become a Partisan Issue (How to Make Dumbbell Plots in R)
 date: "2020-03-15"
 category: R
 tags: [r, visualization]
