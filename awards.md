@@ -6,6 +6,12 @@ read_time: false
 
 ## 2020
 
+#### First Place, COVID19 Houston Response Projects
+
+Awarded first place in the Rice Data to Knowledge Lab's 'COVID19 Houston Response Projects' competition. My team's [project](https://github.com/connorrothschild/covid-mobility) was a rigorous statistical analysis of how COVID19 impacted community movement,  mobility, and social distancing. I was responsible for creating the interactive data visualizations in D3.js, which can be found [here](https://connorrothschild.github.io/covid-mobility/viz/), [here](https://connorrothschild.github.io/covid-mobility/viz/line-chart/), and [here](https://connorrothschild.github.io/covid-mobility/viz/predictions/).
+
+
+
 #### Marian Fox Martel Scholar Award
 
 Awarded the Marian Fox Martel Scholar Award for the 2019-2020 academic year. 
