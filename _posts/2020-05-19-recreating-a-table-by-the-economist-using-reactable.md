@@ -12,7 +12,7 @@ comments: true
 In the (free!) articles accompanying that data, I came across the following table:
 
 <div style = "text-align:center">
-  <img width = 100% src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/econ-table.png">
+  <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/econ-table.png">
 </div>
 
 
@@ -23,7 +23,6 @@ I thought the table was clean and sent a clear message. The addition of inline b
 ## Loading packages
 
 Our process uses standard packages: `reactable` (obviously), `htmltools` as its buddy, `lubridate` for days and times, `hrbrthemes` for *The Economist's* font, and `tidyverse` for general purpose data wrangling.
-
 
 {% highlight r %}
 library(reactable)
@@ -170,7 +169,7 @@ data_filtered %>%
 {% endhighlight %}
 
 <div style = "text-align:center">
-  <img width = 100% src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/1.png">
+  <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/1.png">
 </div>
 
 We need to group each country according to its total deaths related to COVID-19, and excess deaths. Then, using those two numbers, we calculate the percentage of excess deaths attributable to COVID-19. This can be used as a metric for underreporting of COVID-19 cases in a country.
@@ -190,7 +189,7 @@ reactable(data_for_table, pagination = FALSE)
 {% endhighlight %}
 
 <div style = "text-align:center">
-  <img width = 100% src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/1.5.png">
+  <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/1.5.png">
 </div>
 
 The only thing missing at this point is the date range. In order to find and display the dates, we need to find the *first date after a given country/region hit 50 COVID-19 cases* and the *last date in the data* for that country/region.
@@ -244,7 +243,7 @@ dates_data <-
 This creates date ranges that look like this:
 
 <div style = "text-align:center">
-  <img width = 100% src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/2.png">
+  <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/2.png">
 </div>
 
 Join these dates with our existing data... 
@@ -265,7 +264,7 @@ data_for_table <- data_filtered %>%
 and we get our finalized dataset:
 
 <div style = "text-align:center">
-  <img width = 100% src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/3.png">
+  <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/3.png">
 </div>
 
 ## Creating the table
@@ -283,7 +282,7 @@ reactable(
 {% endhighlight %}
 
 <div style = "text-align:center">
-  <img width = 100% src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/4.png">
+  <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/4.png">
 </div>
 
 ### Style headers 
@@ -326,7 +325,7 @@ reactable(
 {% endhighlight %}
 
 <div style = "text-align:center">
-  <img width = 100% src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/5.png">
+  <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/5.png">
 </div>
 
 ### Format columns
@@ -407,7 +406,7 @@ reactable(
 {% endhighlight %}
 
 <div style = "text-align:center">
-  <img width = 100% src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/6.png">
+  <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/6.png">
 </div>
 
 ### Add the barcharts
@@ -415,7 +414,6 @@ reactable(
 We can now create the 'deaths' columns, which include barcharts. 
 
 `reactable` makes the addition of barcharts to tables quite easy, thanks to its integration of JavaScript. Here, I pull from one [example](https://glin.github.io/reactable/articles/twitter-followers/twitter-followers.html) on `reactable`'s website, and use the following code:
-
 
 {% highlight r %}
 reactable(
@@ -483,42 +481,43 @@ reactable(
         fontFamily = font_es
       )
     ),
+
     ###### NEW ######
-    covid_deaths = colDef(
-      name = "COVID-19 Deaths",
-      cell = function(value) {
-        width <- paste0(value * 100 / max(data_for_table$covid_deaths), "%")
-        value <- format(value, big.mark = ",")
-        value <- format(value, width = 10, justify = "right")
-        bar <- div(
-          class = "bar-chart",
-          style = list(marginRight = "6px"),
-          div(
-            class = "bar",
-            style = list(width = width, backgroundColor = "#F15A3F")
-          )
-        )
-        div(class = "bar-cell", span(class = "number", value), bar)
-      }
-    ),
-    excess_deaths = colDef(
-      name = "Total Excess Deaths",
-      cell = function(value) {
-        width <-
-          paste0(value * 100 / max(data_for_table$excess_deaths), "%")
-        value <- format(value, big.mark = ",")
-        value <- format(value, width = 10, justify = "right")
-        bar <- div(
-          class = "bar-chart",
-          style = list(marginRight = "6px"),
-          div(
-            class = "bar",
-            style = list(width = width, backgroundColor = "#3F5661")
-          )
-        )
-        div(class = "bar-cell", span(class = "number", value), bar)
-      }
-    )
+​    covid_deaths = colDef(
+​      name = "COVID-19 Deaths",
+​      cell = function(value) {
+​        width <- paste0(value * 100 / max(data_for_table$covid_deaths), "%")
+​        value <- format(value, big.mark = ",")
+​        value <- format(value, width = 10, justify = "right")
+​        bar <- div(
+​          class = "bar-chart",
+​          style = list(marginRight = "6px"),
+​          div(
+​            class = "bar",
+​            style = list(width = width, backgroundColor = "#F15A3F")
+​          )
+​        )
+​        div(class = "bar-cell", span(class = "number", value), bar)
+​      }
+​    ),
+​    excess_deaths = colDef(
+​      name = "Total Excess Deaths",
+​      cell = function(value) {
+​        width <-
+​          paste0(value * 100 / max(data_for_table$excess_deaths), "%")
+​        value <- format(value, big.mark = ",")
+​        value <- format(value, width = 10, justify = "right")
+​        bar <- div(
+​          class = "bar-chart",
+​          style = list(marginRight = "6px"),
+​          div(
+​            class = "bar",
+​            style = list(width = width, backgroundColor = "#3F5661")
+​          )
+​        )
+​        div(class = "bar-cell", span(class = "number", value), bar)
+​      }
+​    )
   )
 )
 {% endhighlight %}
@@ -552,41 +551,41 @@ First, we need to define some CSS. `reactable` allows you to easily include CSS 
 
 Now, let's look at how we define `covid_deaths`:
 
-
 {% highlight r %}
   covid_deaths = colDef(
+
     ### define the name
-    name = "COVID-19 Deaths",
+​    name = "COVID-19 Deaths",
     ### create a 'cell' function
-    cell = function(value) {
+​    cell = function(value) {
       ### define the bar width according to the specified value
-      width <- paste0(value * 100 / max(data_for_table$covid_deaths), "%")
+​      width <- paste0(value * 100 / max(data_for_table$covid_deaths), "%")
       ### add a comma to the label
-      value <- format(value, big.mark = ",")
+​      value <- format(value, big.mark = ",")
       ### justify and provide padding with width
-      value <- format(value, width = 10, justify = "right")
+​      value <- format(value, width = 10, justify = "right")
       ### create the barchart div
-      bar <- div(
+​      bar <- div(
         ### with a class of 'bar-chart'
-        class = "bar-chart",
+​        class = "bar-chart",
         ### give the bar a margin
-        style = list(marginRight = "6px"),
+​        style = list(marginRight = "6px"),
         ### create the *actual* bar, with the red economist color
-        div(
-          class = "bar",
-          style = list(width = width, backgroundColor = "#F15A3F")
-        )
-      )
+​        div(
+​          class = "bar",
+​          style = list(width = width, backgroundColor = "#F15A3F")
+​        )
+​      )
       ### bring it all together, with the 'value' (number) preceding the bar itself
-      div(class = "bar-cell", span(class = "number", value), bar)
-    }
+​      div(class = "bar-cell", span(class = "number", value), bar)
+​    }
   )
 {% endhighlight %}
 
 This creates a table that looks like this:
 
 <div style = "text-align:center">
-  <img width = 100% src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/7.png">
+  <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/7.png">
 </div>
 
 
@@ -723,7 +722,7 @@ div(
 {% endhighlight %}
 
 <div style = "text-align:center">
-  <img width = 100% src = ../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/8.png>
+  <img width = "100%" src = ../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/8.png>
 </div>
 
 Yikes! Those font sizes don't quite line up with *The Economist*'s. Let's add classes to our divs to match their style.
@@ -768,12 +767,12 @@ div(class = "tableTitle",
 {% endhighlight %}
 
 <div style = "text-align:center">
-  <img width = 100% src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/final.png">
+  <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/final.png">
 </div>
 
 Let's compare that to the table we're attempting to replicate. Note that some of the data has changed in the time between *The Economist* published their table and I created mine.
 
 <div style = "text-align:center">
-  <img width = 100% src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/econ-table.png">
+  <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/econ-table.png">
 </div>
 
