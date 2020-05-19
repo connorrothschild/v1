@@ -168,6 +168,8 @@ data_filtered %>%
   reactable()
 {% endhighlight %}
 
+
+
 <div style = "text-align:center">
   <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/1.png">
 </div>
@@ -187,6 +189,8 @@ data_for_table <- data_filtered %>%
 
 reactable(data_for_table, pagination = FALSE)
 {% endhighlight %}
+
+
 
 <div style = "text-align:center">
   <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/1.5.png">
@@ -263,6 +267,8 @@ data_for_table <- data_filtered %>%
 
 and we get our finalized dataset:
 
+
+
 <div style = "text-align:center">
   <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/3.png">
 </div>
@@ -280,6 +286,8 @@ reactable(
   compact = TRUE,
   pagination = FALSE)
 {% endhighlight %}
+
+
 
 <div style = "text-align:center">
   <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/4.png">
@@ -323,6 +331,8 @@ reactable(
   )
 )
 {% endhighlight %}
+
+
 
 <div style = "text-align:center">
   <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/5.png">
@@ -404,6 +414,8 @@ reactable(
   )
 )
 {% endhighlight %}
+
+
 
 <div style = "text-align:center">
   <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/6.png">
@@ -765,6 +777,8 @@ div(class = "tableTitle",
     ),
     table)
 {% endhighlight %}
+
+
 
 <div style = "text-align:center">
   <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/final.png">
