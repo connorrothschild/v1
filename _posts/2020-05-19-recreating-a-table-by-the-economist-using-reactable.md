@@ -733,8 +733,8 @@ div(
 ​    table)
 {% endhighlight %}
 
-<div style = "text-align:center">
-  <img width = "100%" src = ../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/8.png>
+<div style = "text-align:center;margin:2px;">
+  <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/8.png">
 </div>
 
 Yikes! Those font sizes don't quite line up with *The Economist*'s. Let's add classes to our divs to match their style.
@@ -780,7 +780,7 @@ div(class = "tableTitle",
 
 
 
-<div style = "text-align:center">
+<div style = "text-align:center;margin-top:2px">
   <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/final.png">
 </div>
 
