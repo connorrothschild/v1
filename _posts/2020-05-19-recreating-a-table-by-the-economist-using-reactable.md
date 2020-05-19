@@ -114,7 +114,6 @@ But unfortunately, that's not all. We need to filter our data to only include th
 
 Let's begin by manually defining and filtering according to the countries and regions that *The Economist* includes. (This selection does not seem to have an order to it; as such, it has to be manual).
 
-
 {% highlight r %}
 good_countries <-
   c("Britain",
@@ -170,7 +169,7 @@ data_filtered %>%
 
 
 
-<div style = "text-align:center">
+<div style = "text-align:center;margin-top:3%">
   <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/1.png">
 </div>
 
@@ -190,9 +189,7 @@ data_for_table <- data_filtered %>%
 reactable(data_for_table, pagination = FALSE)
 {% endhighlight %}
 
-
-
-<div style = "text-align:center">
+<div style = "text-align:center;margin-top:3%">
   <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/1.5.png">
 </div>
 
@@ -246,7 +243,7 @@ dates_data <-
 
 This creates date ranges that look like this:
 
-<div style = "text-align:center">
+<div style = "text-align:center;margin-top:3%">
   <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/2.png">
 </div>
 
@@ -267,9 +264,7 @@ data_for_table <- data_filtered %>%
 
 and we get our finalized dataset:
 
-
-
-<div style = "text-align:center">
+<div style = "text-align:center;margin-top:3%">
   <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/3.png">
 </div>
 
@@ -287,9 +282,7 @@ reactable(
   pagination = FALSE)
 {% endhighlight %}
 
-
-
-<div style = "text-align:center">
+<div style = "text-align:center;margin-top:3%">
   <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/4.png">
 </div>
 
@@ -332,9 +325,7 @@ reactable(
 )
 {% endhighlight %}
 
-
-
-<div style = "text-align:center">
+<div style = "text-align:center;margin-top:3%">
   <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/5.png">
 </div>
 
@@ -415,9 +406,7 @@ reactable(
 )
 {% endhighlight %}
 
-
-
-<div style = "text-align:center">
+<div style = "text-align:center;margin-top:3%">
   <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/6.png">
 </div>
 
@@ -596,7 +585,7 @@ Now, let's look at how we define `covid_deaths`:
 
 This creates a table that looks like this:
 
-<div style = "text-align:center">
+<div style = "text-align:center;margin-top:3%">
   <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/7.png">
 </div>
 
@@ -733,7 +722,7 @@ div(
 ​    table)
 {% endhighlight %}
 
-<div style = "text-align:center;margin:2px;">
+<div style = "text-align:center;margin:3%;">
   <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/8.png">
 </div>
 
@@ -778,9 +767,7 @@ div(class = "tableTitle",
     table)
 {% endhighlight %}
 
-
-
-<div style = "text-align:center;margin-top:2px">
+<div style = "text-align:center;margin-top:3%">
   <img width = "100%" src = "../data/2020-05-19-recreating-a-table-by-the-economist-using-reactable/final.png">
 </div>
 
