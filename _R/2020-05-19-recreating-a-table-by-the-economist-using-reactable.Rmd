@@ -1,5 +1,5 @@
 ---
-title: "Recreating a table by The Economist using `reactable`"
+# title: "Recreating a table by The Economist using `reactable`"
 date: "2020-05-18"
 category: R
 tags: [r, visualization, interactive]
