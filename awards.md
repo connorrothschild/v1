@@ -6,7 +6,7 @@ read_time: false
 
 ## 2020
 
-#### First Place, COVID19 Houston Response Projects
+#### First Place, COVID19 Houston Response Projects | [Media](https://d2k.rice.edu/news/rice-d2k-lab-transitions-showcase-live-interactive-virtual-experience)
 
 Awarded first place in the Rice Data to Knowledge Lab's 'COVID19 Houston Response Projects' competition. My team's [project](https://github.com/connorrothschild/covid-mobility) was a rigorous statistical analysis of how COVID19 impacted community movement,  mobility, and social distancing. I was responsible for creating the interactive data visualizations in D3.js, which can be found [here](https://connorrothschild.github.io/covid-mobility/viz/), [here](https://connorrothschild.github.io/covid-mobility/viz/line-chart/), and [here](https://connorrothschild.github.io/covid-mobility/viz/predictions/).
 

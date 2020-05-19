@@ -1,4 +1,0 @@
-```{r}
-load("./knitpages.R")
-```
-
