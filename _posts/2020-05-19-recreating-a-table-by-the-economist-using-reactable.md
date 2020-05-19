@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+---
+# title: "Recreating a table by The Economist using `reactable`"
+date: "2020-05-18"
+category: R
+tags: [r, visualization, interactive]
+comments: true
+---
+
+<!--html_preserve--><!DOCTYPE html>
 
 <html>
 
@@ -76,7 +84,6 @@ if (!!window.navigator.userAgent.match("MSIE 8")) {
         });
       }
     };
-
 
     // Set the correct tab when the page loads
     showStuffFromHash(context);
@@ -3227,4 +3234,4 @@ $(document).ready(function () {
 </script>
 
 </body>
-</html>
+</html><!--/html_preserve-->
