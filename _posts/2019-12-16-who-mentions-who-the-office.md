@@ -110,7 +110,7 @@ transcripts_tokenized %>%
        y = "Mentions")
 {% endhighlight %}
 
-![center](/figs/2019-12-16-who-mentions-who-the-office/unnamed-chunk-5-1.png)
+![center](../../figs/2019-12-16-who-mentions-who-the-office/unnamed-chunk-5-1.png)
 
 The takeaway here is that Dwight mentions Jim the most, followed by Michael. No surprise there! What I find interesting is that only three characters *really* talk about/to Jim. After Dwight, Michael, and Pam (and Jim referencing himself, apparently), the mention rate for Jim's name drops from over 200 to only 60 mentions. It seems as if the writers of the Office intentionally made Jim a subject of conversation among only a few characters!
 
@@ -174,7 +174,7 @@ library(circlize)
 chordDiagram(circlize_data, grid.col = c("#B997C7", "#824D99", "#4E78C4", "#57A2AC", "#7EB875", "#D0B541", "#E67F33", "#CE2220", "#521A13"))
 {% endhighlight %}
 
-![center](/figs/2019-12-16-who-mentions-who-the-office/unnamed-chunk-9-1.png)
+![center](../../figs/2019-12-16-who-mentions-who-the-office/unnamed-chunk-9-1.png)
 
 ### Make It Interactive
 

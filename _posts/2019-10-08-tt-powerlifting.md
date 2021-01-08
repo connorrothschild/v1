@@ -134,7 +134,7 @@ max_lifts_final %>%
                      color="grey20", size=4, vjust=-3, fontface="bold")
 {% endhighlight %}
 
-![center](/figs/2019-10-08-tt-powerlifting/unnamed-chunk-8-1.png)
+![center](../../figs/2019-10-08-tt-powerlifting/unnamed-chunk-8-1.png)
 
 Finally, we animate, using Thomas Pedersen's wonderful [gganimate package](https://github.com/thomasp85/gganimate):
 
@@ -174,7 +174,7 @@ a_gif <- animate(animation,
 a_gif
 {% endhighlight %}
 
-![center](/figs/2019-10-08-tt-powerlifting/unnamed-chunk-9-1.gif)
+![center](../../figs/2019-10-08-tt-powerlifting/unnamed-chunk-9-1.gif)
 
 I'd like to include another GIF: a line chart of differences over time
 
@@ -210,7 +210,7 @@ b_gif <- animate(animation2,
 b_gif
 {% endhighlight %}
 
-![center](/figs/2019-10-08-tt-powerlifting/unnamed-chunk-10-1.gif)
+![center](../../figs/2019-10-08-tt-powerlifting/unnamed-chunk-10-1.gif)
 
 Next, combine them using `magick` (thanks to [this
 post](https://github.com/thomasp85/gganimate/wiki/Animation-Composition)):
@@ -230,5 +230,5 @@ for(i in 2:250){
 new_gif
 {% endhighlight %}
 
-![center](/figs/2019-10-08-tt-powerlifting/unnamed-chunk-11-1.gif)
+![center](../../figs/2019-10-08-tt-powerlifting/unnamed-chunk-11-1.gif)
 

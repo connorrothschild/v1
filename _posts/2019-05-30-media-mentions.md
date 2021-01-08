@@ -78,7 +78,7 @@ data %>%
        title="Average Proportion of Media Coverage on a Weekly Basis")
 {% endhighlight %}
 
-![center](/figs/2019-05-30-media-mentions/unnamed-chunk-4-1.png)
+![center](../../figs/2019-05-30-media-mentions/unnamed-chunk-4-1.png)
 
 Somewhat unsurprisingly. Joe Biden and Bernie Sanders lead the pack in media attention. Joe Biden tends to receive significantly more media attention than the average candidate (a weekly average of 0.9% of overall media content compared to 0.14% for the average candidate).
 
@@ -118,7 +118,7 @@ data %>%
                                   "Kamala Harris", "Beto O'Rourke", "Cory Booker"))
 {% endhighlight %}
 
-![center](/figs/2019-05-30-media-mentions/unnamed-chunk-5-1.png)
+![center](../../figs/2019-05-30-media-mentions/unnamed-chunk-5-1.png)
 
 Evidently, much of Joe Biden's popularity in the media can be explained by a few large spikes in weekly media mentions. We can explore the distribution of weekly media mentions using a visualization known as a [density ridge plot](https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html).
 
@@ -140,7 +140,7 @@ ggplot(aes(x = pct_of_all_candidate_clips*100, y = reorder(name,pct_of_all_candi
        subtitle="With density ridges depicting average mentions on a weekly basis") 
 {% endhighlight %}
 
-![center](/figs/2019-05-30-media-mentions/unnamed-chunk-6-1.png)
+![center](../../figs/2019-05-30-media-mentions/unnamed-chunk-6-1.png)
 
 This plot illustrates that most candidates enjoy the same levels of media coverage from one week to another. Joe Biden, however, often has weeks in which he receives much more attention than usual, as evidenced by his small peaks throughout the plot. Bernie Sanders, Kamala Harris, and Beto O'Rourke also experienced a few jumps in attention, likely when they announced their candidacy for the presidency.
 
@@ -164,7 +164,7 @@ data %>%
        subtitle="Subtracting a given week's % mentions from the week prior")
 {% endhighlight %}
 
-![center](/figs/2019-05-30-media-mentions/unnamed-chunk-7-1.png)
+![center](../../figs/2019-05-30-media-mentions/unnamed-chunk-7-1.png)
 
 Unsurprisingly, the bars tend to mirror one another. If a candidate enjoys a steep increase in media attention one week, they are likely to see a correlated drop in the following week (if that week were really a spike in attention). The plot suggests that Joe Biden's announcement (on April 25th) led to the most dramatic change in media attention in the 2020 cycle so far. Bernie Sanders also witnessed a spike in attention in the week following his announcement on February 19th. The same is true for the other candidates included in this plot.
 
@@ -229,7 +229,7 @@ recentdata %>%
        subtitle = "Candidates ranked by weekly media mentions")
 {% endhighlight %}
 
-![center](/figs/2019-05-30-media-mentions/unnamed-chunk-8-1.png)
+![center](../../figs/2019-05-30-media-mentions/unnamed-chunk-8-1.png)
 
 Let's focus on the meteoric rise of Pete Buttigieg:
 
@@ -274,7 +274,7 @@ petedata %>%
        subtitle = "Pete Buttigieg's Rapid Rise in Media Mentions")
 {% endhighlight %}
 
-![center](/figs/2019-05-30-media-mentions/unnamed-chunk-9-1.png)
+![center](../../figs/2019-05-30-media-mentions/unnamed-chunk-9-1.png)
 
 
 Some takeaways:

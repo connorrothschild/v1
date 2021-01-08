@@ -12,7 +12,7 @@ Inspired by Rafael Irizarry's post ["You can replicate almost any plot with R"](
 
 I was interested in this Tidy Tuesday because some of my [past work](https://connorrothschild.github.io/r/introducing-tpltheme/) has been dedicated to creating publication-ready plots. Because [the first visualization I ever created](https://connorrothschild.github.io/r/automation/) was inspired by (a replication of?) [this visualization](https://www.bloomberg.com/graphics/2017-job-risk/) from Bloomberg graphics, I decided to set out on a journey to make that plot as close as possible to the real thing.
 
-![center](/figs/2019-12-10-tt-replication/bloomberg.png)
+![center](../../figs/2019-12-10-tt-replication/bloomberg.png)
 
 The real goal of this week's Tidy Tuesday is using **the data that Rafael posted** to create other cool visualizations; I took a slightly different approach to try to recreate another visualization entirely. What follows is an interactive recreation of the visualization above, using [Shiny](https://shiny.rstudio.com/) and [plotly](https://plot.ly/r/).
 
@@ -388,8 +388,8 @@ And we're done! Find my interactive visualization [here](https://connorrothschil
 
 Here's the Bloomberg visualization:
 
-![center](/figs/2019-12-10-tt-replication/bloomberg.png)
+![center](../../figs/2019-12-10-tt-replication/bloomberg.png)
 
 And here's mine:
 
-![center](/figs/2019-12-10-tt-replication/replication.png)
+![center](../../figs/2019-12-10-tt-replication/replication.png)

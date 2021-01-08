@@ -148,7 +148,7 @@ oecd_joined %>%
   drop_axis(axis = "y")
 {% endhighlight %}
 
-![center](/figs/2019-08-12-games-and-guns/unnamed-chunk-9-1.png)
+![center](../../figs/2019-08-12-games-and-guns/unnamed-chunk-9-1.png)
 
 Finally, we can focus on only OECD countries:
 
@@ -170,7 +170,7 @@ oecd_joined %>%
   drop_axis(axis = "y")
 {% endhighlight %}
 
-![center](/figs/2019-08-12-games-and-guns/unnamed-chunk-10-1.png)
+![center](../../figs/2019-08-12-games-and-guns/unnamed-chunk-10-1.png)
 
 To conclude, let's add an emoji to fully capture our skepticism with the [newfound argument](https://www.cnn.com/2019/08/05/politics/kevin-mccarthy-mass-shootings-video-games/index.html) linking video games to violence.
 
@@ -193,4 +193,4 @@ oecd_joined %>%
   geom_text(y = 4.85, x = 107.5, size = 7, label = emoji('thinking'), family = "EmojiOne")
 {% endhighlight %}
 
-![center](/figs/2019-08-12-games-and-guns/unnamed-chunk-11-1.png)
+![center](../../figs/2019-08-12-games-and-guns/unnamed-chunk-11-1.png)

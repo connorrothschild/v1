@@ -145,7 +145,7 @@ map_bw <- plot_bw +
 map_bw
 {% endhighlight %}
 
-![center](/figs/2019-11-21-map-springfield/unnamed-chunk-6-1.png)
+![center](../../figs/2019-11-21-map-springfield/unnamed-chunk-6-1.png)
 
 Finally, save the plot:
 
@@ -226,7 +226,7 @@ map_gold <- plot_gold +
 map_gold
 {% endhighlight %}
 
-![center](/figs/2019-11-21-map-springfield/unnamed-chunk-8-1.png)
+![center](../../figs/2019-11-21-map-springfield/unnamed-chunk-8-1.png)
 
 {% highlight r %}
 ggsave(map_gold, filename = "gold_springfield_map.png", width = 3.234, height = 5.016)

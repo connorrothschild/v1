@@ -117,7 +117,7 @@ tx <- ggplot(data = merged, mapping = aes(x = long, y = lat, group = group, fill
 
 Here's what the plot looks like before animation:
 
-![center](/figs/2019-07-24-tx-vaccination-rates/unnamed-chunk-6-1.png)
+![center](../../figs/2019-07-24-tx-vaccination-rates/unnamed-chunk-6-1.png)
 
 ### Rayshader
 

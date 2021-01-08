@@ -59,7 +59,7 @@ ggplot(iris, aes(x=Species, y=Sepal.Width, fill=Species)) +
     labs(x="Species", y="Mean Sepal Width (cm)", fill="Species", title="Iris Dataset")
 {% endhighlight %}
 
-![center](/figs/2019-07-23-introducing-tpltheme/unnamed-chunk-4-1.png)
+![center](../../figs/2019-07-23-introducing-tpltheme/unnamed-chunk-4-1.png)
 
 ### Fonts
 
@@ -84,7 +84,7 @@ ggplot(iris, aes(x=jitter(Sepal.Width), y=jitter(Sepal.Length), col=Species, siz
     labs(x="Sepal Width (cm)", y="Sepal Length (cm)", col="Species", size = "Petal Length", title="Iris Dataset")
 {% endhighlight %}
 
-![center](/figs/2019-07-23-introducing-tpltheme/unnamed-chunk-6-1.png)
+![center](../../figs/2019-07-23-introducing-tpltheme/unnamed-chunk-6-1.png)
 
 By specifying `style = "Texas"` within `set_tpl_theme`, the user may also create Texas-specific plots.
 
@@ -103,7 +103,7 @@ ggplot(data = tx_vac, mapping = aes(x = long, y = lat, group = group, fill = avg
        caption = "Source: Texas DSHS")
 {% endhighlight %}
 
-![center](/figs/2019-07-23-introducing-tpltheme/unnamed-chunk-7-1.png)
+![center](../../figs/2019-07-23-introducing-tpltheme/unnamed-chunk-7-1.png)
 
 And it also works for categorical variables:
 
@@ -124,7 +124,7 @@ tx_vac %>%
        caption = "Source: Texas DSHS")
 {% endhighlight %}
 
-![center](/figs/2019-07-23-introducing-tpltheme/unnamed-chunk-8-1.png)
+![center](../../figs/2019-07-23-introducing-tpltheme/unnamed-chunk-8-1.png)
 
 If the number of colors exceeds the number of colors in the TPL palette (9), the function `tpl_color_pal()` will drop the TPL color palette and return the greatest number of unique colors possible within the RColorBrewer's "Paired" palette (for more information on the use of RColorBrewer palettes, see [this chapter](https://bookdown.org/rdpeng/exdata/plotting-and-color-in-r.html#using-the-rcolorbrewer-palettes)).
 
@@ -137,7 +137,7 @@ tx_vac %>%
   labs(title = "Texas Counties")
 {% endhighlight %}
 
-![center](/figs/2019-07-23-introducing-tpltheme/unnamed-chunk-9-1.png)
+![center](../../figs/2019-07-23-introducing-tpltheme/unnamed-chunk-9-1.png)
 
 {% highlight r %}
 # default to print afterwards
@@ -177,7 +177,7 @@ plot <- ggplot(iris, aes(x=jitter(Sepal.Width), y=jitter(Sepal.Length), col=Spec
 add_tpl_logo_text(plot)
 {% endhighlight %}
 
-![center](/figs/2019-07-23-introducing-tpltheme/unnamed-chunk-11-1.png)
+![center](../../figs/2019-07-23-introducing-tpltheme/unnamed-chunk-11-1.png)
 
 The user may also need to specify `align`, which moves the plot horizontally across the bottom of the page.
 
@@ -190,7 +190,7 @@ plot <- ggplot(iris, aes(x=Species, y=Sepal.Width, fill=Species)) +
 add_tpl_logo_text(plot, align = 1)    
 {% endhighlight %}
 
-![center](/figs/2019-07-23-introducing-tpltheme/unnamed-chunk-12-1.png)
+![center](../../figs/2019-07-23-introducing-tpltheme/unnamed-chunk-12-1.png)
 
 ### Additional Functions
 
@@ -208,7 +208,7 @@ ggplot(iris, aes(x=jitter(Sepal.Width), y=jitter(Sepal.Length), col=Species, siz
     drop_axis(axis = "y")
 {% endhighlight %}
 
-![center](/figs/2019-07-23-introducing-tpltheme/unnamed-chunk-13-1.png)
+![center](../../figs/2019-07-23-introducing-tpltheme/unnamed-chunk-13-1.png)
 
 ### Colors
 
@@ -226,7 +226,7 @@ p3 <- view_palette(palette = palette_tpl_sequential) + ggtitle("Sequential")
 gridExtra::grid.arrange(p1, p2, p3, nrow = 1)
 {% endhighlight %}
 
-![center](/figs/2019-07-23-introducing-tpltheme/unnamed-chunk-14-1.png)
+![center](../../figs/2019-07-23-introducing-tpltheme/unnamed-chunk-14-1.png)
 
 These palettes were created using http://colorbrewer2.org and http://coloors.co and are colorblind friendly. 
 
@@ -260,7 +260,7 @@ reversed <- normal +
 gridExtra::grid.arrange(normal, reversed)
 {% endhighlight %}
 
-![center](/figs/2019-07-23-introducing-tpltheme/unnamed-chunk-15-1.png)
+![center](../../figs/2019-07-23-introducing-tpltheme/unnamed-chunk-15-1.png)
 
 The user may specify the color palette in the `scale_fill_*` or `scale_color_*` functions in a ggplot call. Specifically, the user can specify the `palette` (categorical, diverging, sequential) and whether the palette should be reversed.
 
@@ -284,7 +284,7 @@ reversed <- normal +
 gridExtra::grid.arrange(normal, reversed, nrow = 1)
 {% endhighlight %}
 
-![center](/figs/2019-07-23-introducing-tpltheme/unnamed-chunk-16-1.png)
+![center](../../figs/2019-07-23-introducing-tpltheme/unnamed-chunk-16-1.png)
 
 
 {% highlight r %}
@@ -304,7 +304,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 {% endhighlight %}
 
-![center](/figs/2019-07-23-introducing-tpltheme/unnamed-chunk-17-1.png)
+![center](../../figs/2019-07-23-introducing-tpltheme/unnamed-chunk-17-1.png)
 
 ### Restore Defaults
 
@@ -329,7 +329,7 @@ ggplot(iris, aes(x=jitter(Sepal.Width), y=jitter(Sepal.Length), col=Species, siz
     labs(x="Sepal Width (cm)", y="Sepal Length (cm)", col="Species", size = "Petal Length", title="Iris Dataset")
 {% endhighlight %}
 
-![center](/figs/2019-07-23-introducing-tpltheme/unnamed-chunk-18-1.png)
+![center](../../figs/2019-07-23-introducing-tpltheme/unnamed-chunk-18-1.png)
 
 To restore the TPL theme, simply call `set_tpl_theme()`:
 
@@ -339,4 +339,4 @@ set_tpl_theme()
 last_plot()
 {% endhighlight %}
 
-![center](/figs/2019-07-23-introducing-tpltheme/unnamed-chunk-19-1.png)
+![center](../../figs/2019-07-23-introducing-tpltheme/unnamed-chunk-19-1.png)

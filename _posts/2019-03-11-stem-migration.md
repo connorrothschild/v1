@@ -124,7 +124,7 @@ ggplot(data=data, mapping = aes(x=year,y=proportion, colour=proportiontype, grou
                       label=c("Black","Female","Hispanic"))
 {% endhighlight %}
 
-![center](/figs/2019-03-11-stem-migration/plot2-1.png)
+![center](../../figs/2019-03-11-stem-migration/plot2-1.png)
 
 Of the traditionally underrepresented groups, women fare the best in STEM. But even at their peak, they only held 19% of seats in STEM classrooms.
 
@@ -149,7 +149,7 @@ ggplot(aes(fill=type, y=growth, x=year)) +
                       label=c("Black","Female","Hispanic"))
 {% endhighlight %}
 
-![center](/figs/2019-03-11-stem-migration/plot3-1.png)
+![center](../../figs/2019-03-11-stem-migration/plot3-1.png)
 
 It seems as if women experience the greatest growth in STEM enrollment during their time as undergraduates, while Black students tend to migrate *out* of STEM majors.
 
@@ -169,7 +169,7 @@ data %>% distinct(year,type,.keep_all=TRUE) %>%
   theme_minimal()
 {% endhighlight %}
 
-![center](/figs/2019-03-11-stem-migration/plot4-1.png)
+![center](../../figs/2019-03-11-stem-migration/plot4-1.png)
 
 
 {% highlight r %}
@@ -184,7 +184,7 @@ data %>% distinct(year,type,.keep_all=TRUE) %>%
   labs(fill="Growth")
 {% endhighlight %}
 
-![center](/figs/2019-03-11-stem-migration/plot5-1.png)
+![center](../../figs/2019-03-11-stem-migration/plot5-1.png)
 
 
 {% highlight r %}
@@ -199,7 +199,7 @@ data %>% distinct(year,type,.keep_all=TRUE) %>%
   labs(fill="Growth")
 {% endhighlight %}
 
-![center](/figs/2019-03-11-stem-migration/plot-1.png)
+![center](../../figs/2019-03-11-stem-migration/plot-1.png)
 
 Here are the previous graphs, faceted:
 
@@ -217,7 +217,7 @@ data %>% distinct(year,type,.keep_all=TRUE) %>%
   scale_x_discrete(labels = c("Class of 2006" = "2006", "Class of 2007" = "2007", "Class of 2008" = "2008", "Class of 2009" = "2009", "Class of 2010" = "2010", "Class of 2011" = "2011", "Class of 2012" = "2012", "Class of 2013" = "2013"))
 {% endhighlight %}
 
-![center](/figs/2019-03-11-stem-migration/plot6-1.png)
+![center](../../figs/2019-03-11-stem-migration/plot6-1.png)
 
 ### Summaries and Takeaways
 
