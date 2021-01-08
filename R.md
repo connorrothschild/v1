@@ -6,7 +6,7 @@ read_time: false
 
 <li class="project-list-item"> 
     <img 
-    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/covid.jpg" 
+    src="https://raw.githubusercontent.com/connorrothschild/v1/master/_assets/images/covid.jpg" 
     alt="COVID-19 Has Become a Partisan Issue" 
     class="project-list-item-thumbnail"> 
 
@@ -21,7 +21,7 @@ read_time: false
 
 <li class="project-list-item"> 
     <img 
-    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/refugee-trends.jpg" 
+    src="https://raw.githubusercontent.com/connorrothschild/v1/master/_assets/images/refugee-trends.jpg" 
     alt="Trends in Refugee Acceptance, 2002 to 2019" 
     class="project-list-item-thumbnail"> 
 
@@ -35,7 +35,7 @@ read_time: false
 
 <li class="project-list-item"> 
     <img 
-    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/replication.jpg" 
+    src="https://raw.githubusercontent.com/connorrothschild/v1/master/_assets/images/replication.jpg" 
     alt="Tidy Tuesday: Replication" 
     class="project-list-item-thumbnail"> 
 
@@ -49,7 +49,7 @@ read_time: false
 
 <li class="project-list-item"> 
     <img 
-    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/streetmap.jpg" 
+    src="https://raw.githubusercontent.com/connorrothschild/v1/master/_assets/images/streetmap.jpg" 
     alt="Streetmaps using ggplot2" 
     class="project-list-item-thumbnail"> 
     <div class="project-list-item-text-wrap"> 
@@ -62,7 +62,7 @@ read_time: false
 
 <li class="project-list-item"> 
     <img 
-    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/scrollytelling.gif" 
+    src="https://raw.githubusercontent.com/connorrothschild/v1/master/_assets/images/scrollytelling.gif" 
     alt="Scrollytelling in R" 
     class="project-list-item-thumbnail"> 
     <div class="project-list-item-text-wrap"> 
@@ -75,7 +75,7 @@ read_time: false
 
 <li class="project-list-item"> 
     <img 
-    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/powerlifting.jpg" 
+    src="https://raw.githubusercontent.com/connorrothschild/v1/master/_assets/images/powerlifting.jpg" 
     alt="Tidy Tuesday: Powerlifting" 
     class="project-list-item-thumbnail"> 
     <div class="project-list-item-text-wrap"> 
@@ -88,7 +88,7 @@ read_time: false
 
 <li class="project-list-item"> 
     <img 
-    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/gamesandguns.jpg" 
+    src="https://raw.githubusercontent.com/connorrothschild/v1/master/_assets/images/gamesandguns.jpg" 
     alt="Games and Guns" 
     class="project-list-item-thumbnail"> 
     <div class="project-list-item-text-wrap"> 
@@ -101,7 +101,7 @@ read_time: false
 
 <li class="project-list-item"> 
     <img 
-    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/rayshader.gif" 
+    src="https://raw.githubusercontent.com/connorrothschild/v1/master/_assets/images/rayshader.gif" 
     alt="Texas Vaccination Rates (Using Rayshader)" 
     class="project-list-item-thumbnail"> 
     <div class="project-list-item-text-wrap"> 
@@ -114,7 +114,7 @@ read_time: false
 
 <li class="project-list-item"> 
     <img 
-    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/mediamentions.jpg" 
+    src="https://raw.githubusercontent.com/connorrothschild/v1/master/_assets/images/mediamentions.jpg" 
     alt="The Race for Media Attention"
     class="project-list-item-thumbnail"> 
     <div class="project-list-item-text-wrap"> 
@@ -127,7 +127,7 @@ read_time: false
 
 <li class="project-list-item"> 
     <img 
-    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/biblebabies.gif" 
+    src="https://raw.githubusercontent.com/connorrothschild/v1/master/_assets/images/biblebabies.gif" 
     alt="Bible Babies"
     class="project-list-item-thumbnail"> 
     <div class="project-list-item-text-wrap"> 
@@ -140,7 +140,7 @@ read_time: false
 
 <li class="project-list-item"> 
     <img 
-    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/stemigration.jpg" 
+    src="https://raw.githubusercontent.com/connorrothschild/v1/master/_assets/images/stemigration.jpg" 
     alt="STEMigration"
     class="project-list-item-thumbnail"> 
     <div class="project-list-item-text-wrap"> 

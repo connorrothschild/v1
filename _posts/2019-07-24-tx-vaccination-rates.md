@@ -161,4 +161,4 @@ render_movie(filename = "./Outputs/tx_vac_vid", type = "custom",
 
 You can see the output here:
 
-![rayshader](https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/rayshader.gif)
+![rayshader](https://raw.githubusercontent.com/connorrothschild/v1/master/_assets/images/rayshader.gif)

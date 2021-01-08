@@ -6,7 +6,7 @@ read_time: false
 
 <li class="project-list-item"> 
     <img 
-    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/map-houston-homicides.jpg" 
+    src="https://raw.githubusercontent.com/connorrothschild/v1/master/_assets/images/map-houston-homicides.jpg" 
     alt="Mapping Houston Homicides" 
     class="project-list-item-thumbnail"> 
     <div class="project-list-item-text-wrap"> 
@@ -20,7 +20,7 @@ read_time: false
 
 <li class="project-list-item"> 
     <img 
-    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/map-missing-migrants.jpg" 
+    src="https://raw.githubusercontent.com/connorrothschild/v1/master/_assets/images/map-missing-migrants.jpg" 
     alt="Mapping Missing Migrants" 
     class="project-list-item-thumbnail"> 
     <div class="project-list-item-text-wrap"> 

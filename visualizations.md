@@ -9,7 +9,7 @@ I've split my portfolio into three sections:
 
 <li class="project-list-item"> 
     <img 
-    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/opioids.gif" 
+    src="https://raw.githubusercontent.com/connorrothschild/v1/master/_assets/images/opioids.gif" 
     alt="D3.js Portfolio"
     class="project-list-item-thumbnail"> 
     <div class="project-list-item-text-wrap"> 
@@ -21,7 +21,7 @@ I've split my portfolio into three sections:
 
 <li class="project-list-item"> 
     <img 
-    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/scrollytelling.gif" 
+    src="https://raw.githubusercontent.com/connorrothschild/v1/master/_assets/images/scrollytelling.gif" 
     alt="R Portfolio"
     class="project-list-item-thumbnail"> 
     <div class="project-list-item-text-wrap"> 
@@ -33,7 +33,7 @@ I've split my portfolio into three sections:
 
 <li class="project-list-item"> 
     <img 
-    src="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/_assets/images/map-missing-migrants.jpg" 
+    src="https://raw.githubusercontent.com/connorrothschild/v1/master/_assets/images/map-missing-migrants.jpg" 
     alt="Mapbox Portfolio"
     class="project-list-item-thumbnail"> 
     <div class="project-list-item-text-wrap"> 
