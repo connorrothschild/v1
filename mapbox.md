@@ -1,5 +1,5 @@
 ---
-permalink: /mapbox/
+permalink: v1/mapbox/
 title: "Mapbox Visualization Portfolio"
 read_time: false
 ---

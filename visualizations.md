@@ -1,5 +1,5 @@
 ---
-permalink: /visualizations/
+permalink: v1/visualizations/
 title: "Data Visualizations"
 ---
 
