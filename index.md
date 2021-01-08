@@ -3,7 +3,7 @@
 
 <img id="portrait" src="me/me.jpg" alt="Headshot of Connor Rothschild">
 
-Hi, I'm Connor! This website (my first version) is now archived, and everything you read below is likely outdated. I've transitioned to a new website, which you can find here](https://www.connorrothschild.com/)! 
+Hi, I'm Connor! This website (my first version) is now archived, and most of what you read below is likely outdated. I've transitioned to a new website, which you can find [here](https://www.connorrothschild.com/)! 
 
 I'm a junior at [Rice University](https://www.rice.edu) studying Social Policy Analysis & Political Science and minoring in data science. 
 
