@@ -1,5 +1,5 @@
 ---
-permalink: /awards/
+permalink: awards/
 title: "Awards"
 read_time: false
 ---
