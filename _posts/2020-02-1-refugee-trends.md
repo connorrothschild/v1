@@ -3,8 +3,7 @@ title: "Trends in Refugee Acceptance, 2002 to 2019"
 date: "2020-02-01"
 category: R
 tags: [r, visualization]
-permalink: /refugee-trends/
-comments: true
+permalink: ../refugee-trends/
 ---
 
 ![final](../data/2020-02-1-refugee-trends/final.svg)
