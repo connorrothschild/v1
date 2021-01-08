@@ -1,5 +1,5 @@
 ---
-permalink: v1/visualizations/
+permalink: /visualizations/
 title: "Data Visualizations"
 ---
 
@@ -13,7 +13,7 @@ I've split my portfolio into three sections:
     alt="D3.js Portfolio"
     class="project-list-item-thumbnail"> 
     <div class="project-list-item-text-wrap"> 
-        <a href="https://connorrothschild.github.io/d3js/" class="project-list-item-link"> 
+        <a href="/d3js" class="project-list-item-link"> 
         <h3 class="project-list-item-title-big">D3.js</h3>
         </a> 
     </div> 
@@ -25,7 +25,7 @@ I've split my portfolio into three sections:
     alt="R Portfolio"
     class="project-list-item-thumbnail"> 
     <div class="project-list-item-text-wrap"> 
-        <a href="https://connorrothschild.github.io/r/" class="project-list-item-link"> 
+        <a href="./r/" class="project-list-item-link"> 
         <h3 class="project-list-item-title-big">R</h3>
         </a> 
     </div> 
@@ -37,7 +37,7 @@ I've split my portfolio into three sections:
     alt="Mapbox Portfolio"
     class="project-list-item-thumbnail"> 
     <div class="project-list-item-text-wrap"> 
-        <a href="https://connorrothschild.github.io/mapbox/" class="project-list-item-link"> 
+        <a href="../mapbox/" class="project-list-item-link"> 
         <h3 class="project-list-item-title-big">Mapbox</h3>
         </a> 
     </div> 
