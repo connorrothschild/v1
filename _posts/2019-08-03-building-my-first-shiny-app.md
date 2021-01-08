@@ -177,4 +177,4 @@ server <- function(input, output) {
 # shinyApp(ui = ui, server = server)
 {% endhighlight %}
 
-[You can find the Shiny app here](https://connorrothschild.shinyapps.io/ggvis/)!
+(I've put this app to sleep because of Shiny server limits, but I hope the above tutorial was helpful!)
