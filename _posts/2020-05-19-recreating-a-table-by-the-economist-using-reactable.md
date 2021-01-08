@@ -2,7 +2,7 @@
 date: "2020-05-19"
 category: R
 tags: [r, visualization, interactive]
-comments: true
+permalink: /recreating-a-table-by-the-economist-using-reactable/
 ---
 
 
