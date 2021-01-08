@@ -3,7 +3,7 @@ title: COVID-19 Has Become a Partisan Issue (How to Make Dumbbell Plots in R)
 date: "2020-03-15"
 category: R
 tags: [r, visualization]
-permalink: ./covid/
+permalink: /covid/
 ---
 
 The coronavirus (also known as COVID-19) is a pandemic. As of this writing, nearly [6000](https://www.worldometers.info/coronavirus/coronavirus-death-toll/) people have died and another [150,000](https://www.worldometers.info/coronavirus/coronavirus-death-toll/) have been infected. All signs seem to show that the virus is only growing.

@@ -3,7 +3,7 @@ title: "Color in Data Visualization: Less How, More Why"
 date: "2020-01-10"
 category: data-viz
 tags: [data-viz, visualization]
-permalink: color-in-data-vis
+permalink: /color-in-data-vis/
 ---
 
 If our use of color in visualizations follows the [Five Ws (and one H)](https://en.wikipedia.org/wiki/Five_Ws), we're spending too much time on *how*, and not enough time on *why*. Color is too often seen as a tool to make pretty pictures, when it should be used to inform our audiences.  
