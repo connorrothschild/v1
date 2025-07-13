@@ -1,4 +1,4 @@
-url: https://connorrothschild.github.io/v1
+url: v1.connorrothschild.com/
 title: Connor Rothschild
 description: Connor Rothschild is an undergraduate at Rice University interested in data science, visualization, and public policy.
 nav-links:
@@ -12,7 +12,7 @@ nav-links:
     url: /blog
   - name: Resume
     url: /resume
-  
+
 # things you probably don't want to change
 defaults:
   - # applies the default layout to all files in the project
@@ -26,8 +26,7 @@ defaults:
       type: posts
     values:
       is_post: true
-  -
-    scope:
+  - scope:
       path: "r"
       type: posts
 permalink: /:title # so we have /about instead of /about.html, and /blog-post instead of /2019-11-22-blog-post.html
